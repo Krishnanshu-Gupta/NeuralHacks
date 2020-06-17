@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062917-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-143062917-1");
+  </script>
+  <meta charset="UTF-8" />
+  <title>DubHacks</title>
+  <meta name="author" content="DubHacks" />
+  <meta name="description" content="DubHacks 2019" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="initial-scale=1.0" />
+  <meta property="og:url" content="https://dubhacks.co" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dubhacks 2019" />
+  <meta property="og:description"
+    content="The Pacific Northwest's largest hackathon, hosted at the University of Washington" />
+  <meta property="og:image" content="https://dubhacks.co/assets/media_preview1.png" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500%7CMontserrat:600,700,800,900&amp;display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="color-border">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav class="navBar">
+    <a href="index.html">
+      <img src="assets/logo.svg" />
+    </a>
+    <ul class="navBarText desktop-only-flex">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li><a href="conduct.html">Code of Conduct</a></li>
+      <li><a href="https://dubhacks19f.typeform.com/to/tvIWlk" target="_blank">Volunteer</a></li>
+      <li><a href="https://dubhacks19f.typeform.com/to/WiOpGP" target="_blank">Mentor</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <button id="mobile-nav-btn" class="mobile-only">
+      <img src="assets/menu.svg" />
+    </button>
+    <div class="mobile-menu">
+      <!-- <div class="mobile-menu-container"> -->
+      <div class="mobile-menu-background"></div>
+      <div class="mobile-menu-content">
+        <ul class="navBarText">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="conduct.html">Code of Conduct</a></li>
+          <li><a href="https://dubhacks19f.typeform.com/to/u4nMeB" target="_blank">Volunteer</a></li>
+          <li><a href="https://dubhacks19f.typeform.com/to/WiOpGP" target="_blank">Mentor</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <button id="mobile-menu-close">close</button>
+      </div>
+    </div>
+    <!-- </div> -->
+  </nav>
+
+  <section class="mainView">
+    <div class="mainview-text">
+      <div>
+        <h1>Made for humans,<br />by humans.</h1>
+        <p class="details">Oct 12-13, 2019 | University of Washington, Seattle</p>
+        <!-- <p>
+          Confirm your spot by Friday, September 27th at 11:59PM PST!
+        </p> -->
+      </div>
+      <a href="info.pdf" target="_blank">
+        <button type="button">
+          Day of Info
+        </button>
+      </a>
+    </div>
+    <img src="assets/Landing_Page_New.png" />
+  </section>
+
+  <section class="info-section">
+    <div class="info-header">
+      <div class="info-view-text">
+        <h2>What is DubHacks?</h2>
+        <p>
+          DubHacks is the largest 24-hour collegiate hackathon in the Pacific
+          Northwest, held at the University of Washington, Seattle. We
+          advocate for the importance of diversity, inclusion, accessibility,
+          and representation in technology by creating a platform where
+          individuals of all backgrounds come together to develop solutions
+          that solve society’s biggest issues. So, what are you waiting for?
+          Get <strong>connected</strong>, feel <strong>empowered</strong> and
+          start <strong>creating</strong>.
+        </p>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-header">
+          <h3>CONNECT</h3>
+          <div>
+            <img src="assets/connect.png" />
+          </div>
+        </div>
+        <p class="card-description">
+          We <strong>connect</strong> technology with humanity.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>EMPOWER</h3>
+          <div>
+            <img src="assets/empower.png" />
+          </div>
+        </div>
+        <p class="card-description">
+          We <strong>empower</strong> students to innovate within their
+          communities.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>CREATE</h3>
+          <div>
+            <img src="assets/create.png" />
+          </div>
+        </div>
+        <p class="card-description">
+          Together, we <strong>create</strong> solutions that are diverse,
+          inclusive, and accessible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="characters-section">
+    <h1>The Humans of DubHacks</h1>
+    <p id="description">
+      DubHacks prioritizes bringing together individuals from a diverse range
+      of backgrounds and experiences. Despite our differences, our community
+      is connected and united by common characteristics, values, and a passion
+      for leveraging technology to inculcate change. We've illustrated
+      characters that were designed with the intention of showcasing diverse
+      personalities and appearances, as well as the way technology can be a
+      catalyst for human interaction and collaboration. We believe the
+      descriptions of these characters are representative of the values and
+      traits exemplified by our attendees.
+    </p>
+    <div class="characters-view disable-scrollbars">
+      <div class="web-carousel" id="characters-carousel">
+        <div class="option active" id="leader">
+          <img src="assets/Leader.png" />
+          <rect></rect>
+          <p>LEADERS</p>
+        </div>
+        <div class="option inactive" id="builder">
+          <img src="assets/Builders.png" />
+          <rect></rect>
+          <p>BUILDERS</p>
+        </div>
+        <div class="option inactive" id="hacker">
+          <img src="assets/Hackers.png" />
+          <rect></rect>
+          <p>HACKERS</p>
+        </div>
+        <div class="option inactive" id="innovator">
+          <img src="assets/Innovators.png" />
+          <rect></rect>
+          <p>INNOVATORS</p>
+        </div>
+        <div class="option inactive" id="creator">
+          <img src="assets/Creators.png" />
+          <rect></rect>
+          <p>CREATORS</p>
+        </div>
+      </div>
+      <div class="web-carousel-footer">
+        <div class="character-card">
+          <svg class="card-triangle" width="72" height="57" viewBox="0 0 72 57" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.557916 54.9451L35.1731 1.30775C35.5679 0.695934 36.4633 0.69774 36.8557 1.31114L71.1645 54.9485C71.5903 55.6141 71.1122 56.4873 70.3221 56.4873H1.39814C0.606177 56.4873 0.128481 55.6105 0.557916 54.9451Z"
+              fill="#FFD884" stroke="#FFD884" stroke-width="0.5" />
+          </svg>
+          <div class="card-content">
+            <h3><span>LEADERS</span></h3>
+            <p>
+              Bold and strong-willed, leaders have a clear direction and
+              vision of what needs to be created and why it matters. Keeping
+              the big picture in mind, they keep their team on track to reach
+              high level goals while maintaining a welcoming and collaborative
+              work environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="characters-mobile-section">
+    <h1>The Humans of DubHacks</h1>
+    <p id="description">
+      DubHacks prioritizes bringing together individuals from a diverse range
+      of backgrounds and experiences. Despite our differences, our community
+      is connected and united by common characteristics, values, and a passion
+      for leveraging technology to inculcate change. We've illustrated
+      characters that were designed with the intention of showcasing diverse
+      personalities and appearances, as well as the way technology can be a
+      catalyst for human interaction and collaboration. We believe the
+      descriptions of these characters are representative of the values and
+      traits exemplified by our attendees.
+    </p>
+    <div class="mobile-carousel" id="mobile-carousel">
+      <div class="option inactive" id="3">
+        <img src="assets/Innovators.png" />
+        <rect></rect>
+        <p>INNOVATORS</p>
+      </div>
+      <div class="option inactive" id="4">
+        <img src="assets/Creators.png" />
+        <rect></rect>
+        <p>CREATORS</p>
+      </div>
+      <div class="option active" id="0">
+        <img src="assets/Leader.png" />
+        <rect></rect>
+        <p>LEADERS</p>
+      </div>
+      <div class="option inactive" id="1">
+        <img src="assets/Builders.png" />
+        <rect></rect>
+        <p>BUILDERS</p>
+      </div>
+      <div class="option inactive" id="2">
+        <img src="assets/Hackers.png" />
+        <rect></rect>
+        <p>HACKERS</p>
+      </div>
+    </div>
+    <div class="mobile-carousel-footer">
+      <svg class="card-triangle" width="72" height="57" viewBox="0 0 72 57" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.557916 54.9451L35.1731 1.30775C35.5679 0.695934 36.4633 0.69774 36.8557 1.31114L71.1645 54.9485C71.5903 55.6141 71.1122 56.4873 70.3221 56.4873H1.39814C0.606177 56.4873 0.128481 55.6105 0.557916 54.9451Z"
+          fill="#FFD884" stroke="#FFD884" stroke-width="0.5" />
+      </svg>
+      <div class="card-content">
+        <h3><strong></strong><span>LEADERS</span></h3>
+        <p>
+          Bold and strong-willed, leaders have a clear direction and vision of
+          what needs to be created and why it matters. Keeping the big picture
+          in mind, they keep their team on track to reach high level goals
+          while maintaining a welcoming and collaborative work environment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracks-section">
+    <div class="tracks-header">
+      <div class="tracks-view-text">
+        <h2>Tracks</h2>
+        <p>
+          Particpants will have the opportunity to create projects base on
+          their choice of a variety of tracks! In addition, we will have
+          corporate-sponsored challenges to be announced on the day of our
+          event.
+        </p>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-header">
+          <h3>Classic <br class="desktop-only" />Track</h3>
+          <div>
+            <img src="assets/track-classic.png" />
+          </div>
+        </div>
+        <p class="card-description">
+          Our ability to make a difference in our communities depends on our
+          individual experiences and backgrounds. This track gives you the
+          freedom to tackle the social good issue most important to you in
+          whatever way you wish.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Data <br class="desktop-only" />Track</h3>
+          <div>
+            <img src="assets/track-data.png" />
+          </div>
+        </div>
+        <p class="card-description">
+          Data is being generated faster than ever with every click, tap, and
+          swipe on your screen. This track focuses on finding ways to
+          understand and utilizing this data to inform and empower others.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Community <br class="desktop-only" />Track</h3>
+          <div>
+            <img src="assets/track-community.png" />
+          </div>
+        </div>
+        <p class="card-description">
+          Technology is a powerful platform that can help us identify and address issues of inequality and accessibility
+          within our local and global communities. In choosing this track, you are working to create a solution that
+          assists a community you care about.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule-section">
+    <div class="schedule-desktop">
+      <div class="left-pane pane">
+        <div class="calday">
+          <h3>Day 1</h3>
+          <p class="date">Saturday, October 12</p>
+          <div class="events-container">
+            <div class="event">
+              <span class="event-name">Registration</span>
+              <span class="event-time">11:30 AM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Opening Cermony</span>
+              <span class="event-time">12:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Lunch</span>
+              <span class="event-time">12:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Hacking Begins</span>
+              <span class="event-time">01:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Team Formation</span>
+              <span class="event-time">01:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Workshops</span>
+              <span class="event-time">02:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Puppies</span>
+              <span class="event-time">04:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Dinner</span>
+              <span class="event-time">07:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">HUB Games Open</span>
+              <span class="event-time">10:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Midnight Snack</span>
+              <span class="event-time">12:00 AM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-pane pane">
+        <h2>What's Going Down</h2>
+
+        <div class="calday">
+          <h3>Day 2</h3>
+          <p class="date">Sunday, October 13</p>
+          <div class="events-container">
+            <div class="event">
+              <span class="event-name">Breakfast</span>
+              <span class="event-time">07:30 AM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Lunch</span>
+              <span class="event-time">11:30 AM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Submit Projects</span>
+              <span class="event-time">12:30 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Judging</span>
+              <span class="event-time">12:30 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Closing Ceremony</span>
+              <span class="event-time">02:30 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="schedule-mobile">
+      <h2>What's Going Down</h2>
+      <div id="day-selector">
+        <button id="day1-btn" class="day active">Day 1</button>
+        <button id="day2-btn" class="day">Day 2</button>
+        <div id="active-day-marker"></div>
+      </div>
+      <div id="day-panes">
+        <div id="day1-pane" class="calday active">
+          <p class="date">Saturday, October 12</p>
+          <div class="events-container">
+            <div class="event">
+              <span class="event-name">Registration</span>
+              <span class="event-time">11:30 AM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Opening Cermony</span>
+              <span class="event-time">12:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Lunch</span>
+              <span class="event-time">12:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Hacking Begins</span>
+              <span class="event-time">01:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Team Formation</span>
+              <span class="event-time">01:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Workshops</span>
+              <span class="event-time">02:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Puppies</span>
+              <span class="event-time">04:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Dinner</span>
+              <span class="event-time">07:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">HUB Games Open</span>
+              <span class="event-time">10:00 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Mid Night Snack</span>
+              <span class="event-time">12:00 AM</span>
+            </div>
+          </div>
+        </div>
+        <div id="day2-pane" class="calday">
+          <p class="date">Sunday, October 13</p>
+          <div class="events-container">
+            <div class="event">
+              <span class="event-name">Breakfast</span>
+              <span class="event-time">07:30 AM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Lunch</span>
+              <span class="event-time">11:30 AM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Submit Projects</span>
+              <span class="event-time">12:30 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Judging</span>
+              <span class="event-time">12:30 PM</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Closing Ceremony</span>
+              <span class="event-time">02:30 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join-section">
+    <div class="join-header">
+      <div class="join-view-text">
+        <h2>Join Us</h2>
+        <p>
+          DubHacks is entirely student organized and run. This means support from industry mentors and volunteers is
+          integral to the success of our event. Register to be a mentor or volunteer today!
+        </p>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-header">
+          <h3>Join as mentor</h3>
+        </div>
+        <p class="card-description">
+          As a mentor, you'll provide guidance and advice to our hackers as they build solutions to pressing problems in
+          our community.
+        </p>
+        <a class="join-btn" href="https://dubhacks19f.typeform.com/to/WiOpGP">Join as a mentor</a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Join as volunteer</h3>
+        </div>
+        <p class="card-description">
+          As a volunteer, you'll support our hackers as they participate in the largest hackathon in the Pacific
+          Northwest.
+        </p>
+        <a class="join-btn" href="https://dubhacks19f.typeform.com/to/u4nMeB">Join as a volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sponsors-section">
+    <h2>Our Sponsors</h2>
+    <div class="sponsors-container big">
+      <div class="sponsor">
+        <a href="https://privacy.microsoft.com/en-us/privacystatement"><img
+            src="assets/sponsor-logos/microsoft.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
+      </div>
+    </div>
+    <div class="sponsors-container">
+      <div class="sponsor">
+        <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
+      </div>
+    </div>
+    <div class="sponsors-container">
+      <div class="sponsor">
+        <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
+            src="assets/sponsor-logos/Deloitte.png" /></a>
+      </div>
+    </div>
+    <div class="sponsors-container">
+      <div class="sponsor">
+        <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
+      </div>
+    </div>
+    <div class="sponsors-container">
+      <div class="sponsor">
+        <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
+      </div>
+    </div>
+    <div class="sponsors-container">
+      <div class="sponsor">
+        <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section class="logo-group group">
+      <img class="footer-logo" src="assets/logo.svg" />
+      <p class="footer-flair-text">Made with &lt;3 in Seattle</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/DubHacks-1497687910461792/" target="_blank">
+          <img src="assets/icon_facebook.svg" />
+        </a>
+        <a href="https://medium.com/@DubHacks" target="_blank">
+          <img src="assets/icon_medium.svg" />
+        </a>
+        <a href="https://twitter.com/DubHacks" target="_blank">
+          <img src="assets/icon_twitter.svg" />
+        </a>
+        <a href="cdn-cgi/l/email-protection.html#731a1d151c333706113b121018005d101c">
+          <img src="assets/icon_mail.svg" />
+        </a>
+      </div>
+    </section>
+    <section class="links-group group">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://apply.DubHacks.co" target="_blank">Applications</a></li>
+        <li><a href="conduct.html">Code of Conduct</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </section>
+    <section class="team-group group">
+      <h2>Our Team</h2>
+      <div class="team-container">
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/libbyknell/', '_blank');"></div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/sharanjhangiani/', '_blank');">
+        </div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/chloe-wen/', '_blank');"></div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/adam-towers/', '_blank');">
+        </div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/marymwojnar/', '_blank');">
+        </div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/liangn/', '_blank');"></div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/jamesmchen/', '_blank');"></div>
+        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/taylor-ka/', '_blank');"></div>
+        <div class="team-member-pic"
+          onclick="window.open('https\://www.linkedin.com/in/justin-b-246731122/', '_blank');"></div>
+        <div class="team-member-pic"
+          onclick="window.open('https\://www.linkedin.com/in/daniel-kim-7bbb3015b/', '_blank');"></div>
+      </div>
+    </section>
+  </footer>
+
+  <div class="color-border-footer">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="scripts/character.js"></script>
+  <script type="text/javascript" src="scripts/mobileSchedule.js"></script>
+  <script type="text/javascript" src="scripts/nav.js"></script>
+</body>
+
+</html>
