@@ -78,6 +78,10 @@
   <section class="mainView">
     <div class="mainview-text">
       <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <div class="typewriter" id="myTypewriter">
+          <h1>The cat and the hat.</h1>
+        </div>
         <h1>Your <div id="sequence"></div></h1>
         <h1>Neural Hacks.</h1>
 
@@ -659,23 +663,26 @@
 
     </div>
   <script>
-        var example = ['idea.', 'design.', 'experience.', 'story.', 'challenge.'];
+      var messages=["idea.", "design.", "experience.", "story.", "challenge."];
+      var rank=0;
 
-        textSequence(0);
-        function textSequence(i) {
+      // Code for Chrome, Safari and Opera
+      document.getElementById("myTypewriter").addEventListener("webkitAnimationEnd", changeTxt);
 
-            if (example.length > i) {
-                setTimeout(function() {
-                    document.getElementById("sequence").innerHTML = example[i];
-                    textSequence(++i);
-                }, 1000); // 1 second (in milliseconds)
+      // Standard syntax
+      document.getElementById("myTypewriter").addEventListener("animationend", changeTxt);
 
-            } else if (example.length == i) { // Loop
-                textSequence(0);
-            }
-
-        }
-    </script>
+      function changeTxt(e){
+        _h1 = this.getElementsByTagName("h1")[0];
+        _h1.style.webkitAnimation = 'none'; // set element animation to none
+         setTimeout(function() { // you surely want a delay before the next message appears
+            _h1.innerHTML=messages[rank];
+            var speed =3.5*messages[rank].length/20; // adjust the speed (3.5 is the original speed, 20 is the original string length
+            _h1.style.webkitAnimation = 'typing '+speed+'s steps(40, end), blink-caret .75s step-end infinite'; //  switch to the original set of animation      
+            (rank===messages.length-1)?rank=0:rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
+          }, 1000);
+      }
+  </script>
   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
