@@ -202,7 +202,7 @@ nav {
   blink-caret .75s step-end infinite;
 }
 
-
+/*
 body {
   background: #333;
   color: #fff;
@@ -211,7 +211,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
+*/
 
 /* The typing effect */
 @keyframes typing {
