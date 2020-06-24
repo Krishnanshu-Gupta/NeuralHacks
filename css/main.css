@@ -852,7 +852,7 @@ body {
   flex: 1;
   flex-shrink: 0;
   padding: 0 1.3rem;
-  background-color: #2b39bf;
+  background-color: #ff90a0;
   color: white;
   position: relative;
   margin-top: 10vw;
@@ -865,7 +865,7 @@ body {
       padding: 0 1.5rem 2rem 1.5rem !important; } }
   .join-section .join-header::before {
     content: " ";
-    background-image: url("../assets/wave-imgs/bluewave-clip.svg");
+    background-image: url("../assets/wave-imgs/peachwave-clip.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 13vw;
@@ -875,7 +875,7 @@ body {
     position: absolute; }
   .join-section .join-header::after {
     content: " ";
-    background-color: #2b39bf;
+    background-color: #ff90a0;
     height: 20vh;
     width: 100vw;
     position: absolute;
@@ -935,7 +935,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #2b39bf;
+  background-color: #ff90a0;
   padding: 0 1.3rem;
   padding-bottom: 2rem; }
   @media (min-width: 768px) {
@@ -949,7 +949,7 @@ body {
       padding: 0; } }
   .join-section .card-group h3 {
     text-transform: uppercase;
-    color: #2b39bf;
+    color: #ff90a0;
     font-weight: 900; }
 
 .sponsors-section {
