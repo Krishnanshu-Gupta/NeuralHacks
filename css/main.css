@@ -378,13 +378,13 @@ body {
   padding: 0 1.3rem;
   background-color: #ff90a0;
   position: relative;
-  padding: 0 5rem !important; }
+  padding: 0 5rem 2rem 5rem !important; }
   @media (min-width: 768px) {
     .tracks-section .tracks-header {
       padding: 0 1.3rem; } }
   @media (max-width: 576px) {
     .tracks-section .tracks-header {
-      padding: 0 2rem !important; } }
+      padding: 0 1.5rem 2rem 1.5rem !important; } }
   @media (max-width: 576px) {
     .tracks-section .tracks-header h2 {
       font-size: 2rem !important; } }
@@ -393,8 +393,8 @@ body {
     background-image: url("../assets/wave-imgs/peachwave-clip.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 14vw;
-    top: -12.8vw;
+    height: 13vw;
+    top: -12.6vw;
     left: -5px;
     right: -5px;
     width: calc(100vw + 10px);
