@@ -859,7 +859,7 @@ body {
   padding: 0 5rem 2rem 5rem !important; }
   @media (min-width: 768px) {
     .join-section .join-header {
-      padding: 0 2rem; } }
+      padding: 2rem 2rem; } }
   @media (max-width: 576px) {
     .join-section .join-header {
       padding: 0 1.5rem 2rem 1.5rem !important; } }
