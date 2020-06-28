@@ -1,1147 +1,999 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062917-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-143062917-1");
-  </script>
-  <meta charset="UTF-8" />
-  <title>Neural Hacks</title>
-  <meta name="author" content="Neural Hacks" />
-  <meta name="description" content="Neural Hacks 2020" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="viewport" content="initial-scale=1.0" />
-  <meta property="og:url" content="https://neuralhacks.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Neural Hacks 2020" />
-  <meta property="og:description"
-    content="The World's Largest Student-Run AI Hackathon" />
-  <meta property="og:image" content="https://dubhacks.co/assets/media_preview1.png" />
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500%7CMontserrat:600,700,800,900&amp;display=swap"
-    rel="stylesheet" />
- <!-- <link rel="stylesheet" href="static/css/style.css" /> -->
-
-  <link rel="preconnect" href="https://unpkg.com" />
-  <link rel="preconnect" href="https://kit.fontawesome.com" />
-  <link rel="preconnect" href="https://www.googletagmanager.com" />
-
-  <link rel="icon" type="image/png" href="static/img/favicon.ico.png" />
-
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css" />
-
-</head>
-
-<body>
-  <div class="color-border">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <nav class="navBar">
-    <a href="index.html">
-      <img src="assets/logo.svg" />
-    </a>
-    <ul class="navBarText desktop-only-flex">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li><a href="conduct.html">Code of Conduct</a></li>
-      <li><a href="https://dubhacks19f.typeform.com/to/tvIWlk" target="_blank">Volunteer</a></li>
-      <li><a href="team.html" target="_blank">Our Team</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-    <button id="mobile-nav-btn" class="mobile-only">
-      <img src="assets/menu.svg" />
-    </button>
-    <div class="mobile-menu">
-      <!-- <div class="mobile-menu-container"> -->
-      <div class="mobile-menu-background"></div>
-      <div class="mobile-menu-content">
-        <ul class="navBarText">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li><a href="conduct.html">Code of Conduct</a></li>
-          <li><a href="https://dubhacks19f.typeform.com/to/u4nMeB" target="_blank">Volunteer</a></li>
-          <li><a href="team.html" target="_blank">Our Team</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-        <button id="mobile-menu-close">close</button>
+   <head>
+      <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062917-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         
+         function gtag() {
+           dataLayer.push(arguments);
+         }
+         gtag("js", new Date());
+         gtag("config", "UA-143062917-1");
+      </script>
+      <meta charset="UTF-8" />
+      <title>Neural Hacks</title>
+      <meta name="author" content="Neural Hacks" />
+      <meta name="description" content="Neural Hacks 2020" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="viewport" content="initial-scale=1.0" />
+      <meta property="og:url" content="https://neuralhacks.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Neural Hacks 2020" />
+      <meta property="og:description"
+         content="The World's Largest Student-Run AI Hackathon" />
+      <meta property="og:image" content="https://dubhacks.co/assets/media_preview1.png" />
+      <link href="css/main.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500%7CMontserrat:600,700,800,900&amp;display=swap"
+         rel="stylesheet" />
+      <!-- <link rel="stylesheet" href="static/css/style.css" /> -->
+      <link rel="preconnect" href="https://unpkg.com" />
+      <link rel="preconnect" href="https://kit.fontawesome.com" />
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <link rel="icon" type="image/png" href="static/img/favicon.ico.png" />
+      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css" />
+   </head>
+   <body>
+      <div class="color-border">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
       </div>
-    </div>
-    <!-- </div> -->
-  </nav>
-
-  <section class="mainView">
-    <div class="mainview-text">
-      <div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <!--
-        <div class="typewriter" id="myTypewriter">
-          <h1>The cat and the hat.</h1>
-        </div>
-        <h1>Your <div id="sequence"></div></h1>
-        -->
-        <h1>From our team to you,<br />Neural Hacks.</h1>
-
-        <p class="details">Aug 8-16, 2020 | Virtual</p>
-        <!-- <p>
-          Confirm your spot by Friday, September 27th at 11:59PM PST!
-        </p> -->
-      </div>
-      <a href="info.pdf" target="_blank">
-        <button type="button">
-          Registration
-        </button>
-      </a>
-    </div>
-    <img src="assets/Landing_Page_New.png" />
-  </section>
-
-  <section class="info-section">
-    <div class="info-header">
-      <div class="info-view-text">
-        <h2>What is Neural Hacks?</h2>
-        <p>
-          Neural Hacks is the largest student-run AI hackathon in the world.
-          We want to make it easy for anyone to dream big and to advocate for the importance 
-          of diversity, inclusion, accessibility, and representation in technology, we created a platform where
-          individuals of all backgrounds come together to develop solutions
-          that solve society’s biggest issues. So, what are you waiting for?
-          Join us to create <strong>#YourNeuralHacks</strong>.
-        </p>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <div class="card-header">
-          <h3>CONNECT</h3>
-          <div>
-            <img src="assets/connect.png" />
-          </div>
-        </div>
-        <p class="card-description">
-          We <strong>connect</strong> technology with humanity.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h3>EMPOWER</h3>
-          <div>
-            <img src="assets/empower.png" />
-          </div>
-        </div>
-        <p class="card-description">
-          We <strong>empower</strong> students to innovate within their
-          communities.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h3>CREATE</h3>
-          <div>
-            <img src="assets/create.png" />
-          </div>
-        </div>
-        <p class="card-description">
-          Together, we <strong>create</strong> solutions that are diverse,
-          inclusive, and accessible.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="characters-section">
-    <h1>The Neural Hacks Community</h1>
-    <p id="description">
-      DubHacks prioritizes bringing together individuals from a diverse range
-      of backgrounds and experiences. Despite our differences, our community
-      is connected and united by common characteristics, values, and a passion
-      for leveraging technology to inculcate change. We've illustrated
-      characters that were designed with the intention of showcasing diverse
-      personalities and appearances, as well as the way technology can be a
-      catalyst for human interaction and collaboration. We believe the
-      descriptions of these characters are representative of the values and
-      traits exemplified by our attendees.
-      
-      Everything you need to create something revolutionary
-We want to inspire students to discover the world around them by empowering them to learn and create by providing an environment for them to explore and build with workshops, mentorship, and speakers.
-    </p>
-    <div class="characters-view disable-scrollbars">
-      <div class="web-carousel" id="characters-carousel">
-        <div class="option active" id="leader">
-          <img src="assets/Leader.png" />
-          <rect></rect>
-          <p>LEADERS</p>
-        </div>
-        <div class="option inactive" id="builder">
-          <img src="assets/Builders.png" />
-          <rect></rect>
-          <p>BUILDERS</p>
-        </div>
-        <div class="option inactive" id="hacker">
-          <img src="assets/Hackers.png" />
-          <rect></rect>
-          <p>HACKERS</p>
-        </div>
-        <div class="option inactive" id="innovator">
-          <img src="assets/Innovators.png" />
-          <rect></rect>
-          <p>INNOVATORS</p>
-        </div>
-        <div class="option inactive" id="creator">
-          <img src="assets/Creators.png" />
-          <rect></rect>
-          <p>CREATORS</p>
-        </div>
-      </div>
-      <div class="web-carousel-footer">
-        <div class="character-card">
-          <svg class="card-triangle" width="72" height="57" viewBox="0 0 72 57" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0.557916 54.9451L35.1731 1.30775C35.5679 0.695934 36.4633 0.69774 36.8557 1.31114L71.1645 54.9485C71.5903 55.6141 71.1122 56.4873 70.3221 56.4873H1.39814C0.606177 56.4873 0.128481 55.6105 0.557916 54.9451Z"
-              fill="#FFD884" stroke="#FFD884" stroke-width="0.5" />
-          </svg>
-          <div class="card-content">
-            <h3><span>LEADERS</span></h3>
-            <p>
-              Bold and strong-willed, leaders have a clear direction and
-              vision of what needs to be created and why it matters. Keeping
-              the big picture in mind, they keep their team on track to reach
-              high level goals while maintaining a welcoming and collaborative
-              work environment.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="characters-mobile-section">
-    <h1>The Humans of DubHacks</h1>
-    <p id="description">
-      DubHacks prioritizes bringing together individuals from a diverse range
-      of backgrounds and experiences. Despite our differences, our community
-      is connected and united by common characteristics, values, and a passion
-      for leveraging technology to inculcate change. We've illustrated
-      characters that were designed with the intention of showcasing diverse
-      personalities and appearances, as well as the way technology can be a
-      catalyst for human interaction and collaboration. We believe the
-      descriptions of these characters are representative of the values and
-      traits exemplified by our attendees.
-    </p>
-    <div class="mobile-carousel" id="mobile-carousel">
-      <div class="option inactive" id="3">
-        <img src="assets/Innovators.png" />
-        <rect></rect>
-        <p>INNOVATORS</p>
-      </div>
-      <div class="option inactive" id="4">
-        <img src="assets/Creators.png" />
-        <rect></rect>
-        <p>CREATORS</p>
-      </div>
-      <div class="option active" id="0">
-        <img src="assets/Leader.png" />
-        <rect></rect>
-        <p>LEADERS</p>
-      </div>
-      <div class="option inactive" id="1">
-        <img src="assets/Builders.png" />
-        <rect></rect>
-        <p>BUILDERS</p>
-      </div>
-      <div class="option inactive" id="2">
-        <img src="assets/Hackers.png" />
-        <rect></rect>
-        <p>HACKERS</p>
-      </div>
-    </div>
-    <div class="mobile-carousel-footer">
-      <svg class="card-triangle" width="72" height="57" viewBox="0 0 72 57" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0.557916 54.9451L35.1731 1.30775C35.5679 0.695934 36.4633 0.69774 36.8557 1.31114L71.1645 54.9485C71.5903 55.6141 71.1122 56.4873 70.3221 56.4873H1.39814C0.606177 56.4873 0.128481 55.6105 0.557916 54.9451Z"
-          fill="#FFD884" stroke="#FFD884" stroke-width="0.5" />
-      </svg>
-      <div class="card-content">
-        <h3><strong></strong><span>LEADERS</span></h3>
-        <p>
-          Bold and strong-willed, leaders have a clear direction and vision of
-          what needs to be created and why it matters. Keeping the big picture
-          in mind, they keep their team on track to reach high level goals
-          while maintaining a welcoming and collaborative work environment.
-        </p>
-      </div>
-    </div>
-  </section>
-
- <!--
-  <section class="tracks-section">
-    <div class="tracks-header">
-      <div class="tracks-view-text">
-        <h2>Tracks</h2>
-        <p>
-          Particpants will have the opportunity to create projects base on
-          their choice of a variety of tracks! In addition, we will have
-          corporate-sponsored challenges to be announced on the day of our
-          event.
-        </p>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <div class="card-header">
-          <h3>Classic <br class="desktop-only" />Track</h3>
-          <div>
-            <img src="assets/track-classic.png" />
-          </div>
-        </div>
-        <p class="card-description">
-          Our ability to make a difference in our communities depends on our
-          individual experiences and backgrounds. This track gives you the
-          freedom to tackle the social good issue most important to you in
-          whatever way you wish.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h3>Data <br class="desktop-only" />Track</h3>
-          <div>
-            <img src="assets/track-data.png" />
-          </div>
-        </div>
-        <p class="card-description">
-          Data is being generated faster than ever with every click, tap, and
-          swipe on your screen. This track focuses on finding ways to
-          understand and utilizing this data to inform and empower others.
-        </p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h3>Community <br class="desktop-only" />Track</h3>
-          <div>
-            <img src="assets/track-community.png" />
-          </div>
-        </div>
-        <p class="card-description">
-          Technology is a powerful platform that can help us identify and address issues of inequality and accessibility
-          within our local and global communities. In choosing this track, you are working to create a solution that
-          assists a community you care about.
-        </p>
-      </div>
-    </div>
-  </section> -->
-  
-  
-  
-  
-  
-  
-  <div class="about-transition"></div>
-
-  <div class="section industries-section">
-  <div class="container">
-    <h1 class="section-title industries-title">
-      Industries
-    </h1>
-  </div>
-  <div class="slider">
-    
-    <div class="slide-track">
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="slide-track">
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="slide-track">
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="slide-track">
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="up">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-        </div>
-        <div class="down bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-        </div>
-        <div class="up">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-      <div class="slide">
-        <div class="down">
-          <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-        </div>
-        <div class="up bottom-left">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-        </div>
-        <div class="down">
-          <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-        </div>
-      </div>
-      
-    </div>
-    
-  </div>
-</div>
-  <div class="modal fade" id="industry-modal">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Industries</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body industry-modal-body">
-        <div class="row align-items-stretch">
-          <div class="col-lg-3 col-md-12 modal-col">
-            <div class="nav nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-technology-tab" data-toggle="pill" href="#industry-technology" role="tab" aria-controls="industry-technology" aria-selected="true">
-                Technology
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-energy-tab" data-toggle="pill" href="#industry-energy" role="tab" aria-controls="industry-energy" aria-selected="true">
-                Energy
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-consulting-tab" data-toggle="pill" href="#industry-consulting" role="tab" aria-controls="industry-consulting" aria-selected="true">
-                Consulting
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-finance-tab" data-toggle="pill" href="#industry-finance" role="tab" aria-controls="industry-finance" aria-selected="true">
-                Finance
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-transportation-tab" data-toggle="pill" href="#industry-transportation" role="tab" aria-controls="industry-transportation" aria-selected="true">
-                Transportation
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-education-tab" data-toggle="pill" href="#industry-education" role="tab" aria-controls="industry-education" aria-selected="true">
-                Education
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-sports-tab" data-toggle="pill" href="#industry-sports" role="tab" aria-controls="industry-sports" aria-selected="true">
-                Sports
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-healthcare-tab" data-toggle="pill" href="#industry-healthcare" role="tab" aria-controls="industry-healthcare" aria-selected="true">
-                Healthcare
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-aerospace-tab" data-toggle="pill" href="#industry-aerospace" role="tab" aria-controls="industry-aerospace" aria-selected="true">
-                Aerospace
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-insurance-tab" data-toggle="pill" href="#industry-insurance" role="tab" aria-controls="industry-insurance" aria-selected="true">
-                Insurance
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-retail-tab" data-toggle="pill" href="#industry-retail" role="tab" aria-controls="industry-retail" aria-selected="true">
-                Retail
-              </a>
-              
-              <a class="nav-link industry-modal-nav-link" id="industry-publicpolicy-tab" data-toggle="pill" href="#industry-publicpolicy" role="tab" aria-controls="industry-publicpolicy" aria-selected="true">
-                Public Policy
-              </a>
-              
+      <nav class="navBar">
+         <a href="index.html">
+         <img src="assets/logo.svg" />
+         </a>
+         <ul class="navBarText desktop-only-flex">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li><a href="conduct.html">Code of Conduct</a></li>
+            <li><a href="https://dubhacks19f.typeform.com/to/tvIWlk" target="_blank">Volunteer</a></li>
+            <li><a href="team.html" target="_blank">Our Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+         </ul>
+         <button id="mobile-nav-btn" class="mobile-only">
+         <img src="assets/menu.svg" />
+         </button>
+         <div class="mobile-menu">
+            <!-- <div class="mobile-menu-container"> -->
+            <div class="mobile-menu-background"></div>
+            <div class="mobile-menu-content">
+               <ul class="navBarText">
+                  <li>
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li><a href="conduct.html">Code of Conduct</a></li>
+                  <li><a href="https://dubhacks19f.typeform.com/to/u4nMeB" target="_blank">Volunteer</a></li>
+                  <li><a href="team.html" target="_blank">Our Team</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+               </ul>
+               <button id="mobile-menu-close">close</button>
             </div>
-          </div>
-          <div class="col-lg-9 col-md-12 modal-col">
-            <div class="tab-content" id="industry-tab-content">
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-technology" role="tabpanel" aria-labelledby="industry-technology-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/technology.svg" alt="Technology" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-      <p>Can you determine sentiment from a tweet, predict a Facebook check-in, or generate appropriate tags for a YouTube video?</p>
-      <h6>Kaggle Competitions:</h6>
-      <ul>
-        <li><a href="https://www.kaggle.com/c/tweet-sentiment-extraction" target="_blank">Tweet Sentiments</a></li>
-        <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins" target="_blank">Check-In Prediction</a></li>
-        <li><a href="https://www.kaggle.com/c/youtube8m" target="_blank">Tag Prediction</a></li>
-      <ul>
-    
-        </p>
+         </div>
+         <!-- </div> -->
+      </nav>
+      <section class="mainView">
+         <div class="mainview-text">
+            <div>
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+               <!--
+                  <div class="typewriter" id="myTypewriter">
+                    <h1>The cat and the hat.</h1>
+                  </div>
+                  <h1>Your <div id="sequence"></div></h1>
+                  -->
+               <h1>From our team to you,<br />Neural Hacks.</h1>
+               <p class="details">Aug 8-16, 2020 | Virtual</p>
+               <!-- <p>
+                  Confirm your spot by Friday, September 27th at 11:59PM PST!
+                  </p> -->
+            </div>
+            <a href="info.pdf" target="_blank">
+            <button type="button">
+            Registration
+            </button>
+            </a>
+         </div>
+         <img src="assets/Landing_Page_New.png" />
+      </section>
+      <section class="info-section">
+         <div class="info-header">
+            <div class="info-view-text">
+               <h2>What is Neural Hacks?</h2>
+               <p>
+                  Neural Hacks is the largest student-run AI hackathon in the world.
+                  We want to make it easy for anyone to dream big and to advocate for the importance 
+                  of diversity, inclusion, accessibility, and representation in technology, we created a platform where
+                  individuals of all backgrounds come together to develop solutions
+                  that solve society’s biggest issues. So, what are you waiting for?
+                  Join us to create <strong>#YourNeuralHacks</strong>.
+               </p>
+            </div>
+         </div>
+         <div class="card-group">
+            <div class="card">
+               <div class="card-header">
+                  <h3>CONNECT</h3>
+                  <div>
+                     <img src="assets/connect.png" />
+                  </div>
+               </div>
+               <p class="card-description">
+                  We <strong>connect</strong> technology with humanity.
+               </p>
+            </div>
+            <div class="card">
+               <div class="card-header">
+                  <h3>EMPOWER</h3>
+                  <div>
+                     <img src="assets/empower.png" />
+                  </div>
+               </div>
+               <p class="card-description">
+                  We <strong>empower</strong> students to innovate within their
+                  communities.
+               </p>
+            </div>
+            <div class="card">
+               <div class="card-header">
+                  <h3>CREATE</h3>
+                  <div>
+                     <img src="assets/create.png" />
+                  </div>
+               </div>
+               <p class="card-description">
+                  Together, we <strong>create</strong> solutions that are diverse,
+                  inclusive, and accessible.
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="characters-section">
+         <h1>The Neural Hacks Community</h1>
+         <p id="description">
+            DubHacks prioritizes bringing together individuals from a diverse range
+            of backgrounds and experiences. Despite our differences, our community
+            is connected and united by common characteristics, values, and a passion
+            for leveraging technology to inculcate change. We've illustrated
+            characters that were designed with the intention of showcasing diverse
+            personalities and appearances, as well as the way technology can be a
+            catalyst for human interaction and collaboration. We believe the
+            descriptions of these characters are representative of the values and
+            traits exemplified by our attendees.
+            Everything you need to create something revolutionary
+            We want to inspire students to discover the world around them by empowering them to learn and create by providing an environment for them to explore and build with workshops, mentorship, and speakers.
+         </p>
+         <div class="characters-view disable-scrollbars">
+            <div class="web-carousel" id="characters-carousel">
+               <div class="option active" id="leader">
+                  <img src="assets/Leader.png" />
+                  <rect></rect>
+                  <p>LEADERS</p>
+               </div>
+               <div class="option inactive" id="builder">
+                  <img src="assets/Builders.png" />
+                  <rect></rect>
+                  <p>BUILDERS</p>
+               </div>
+               <div class="option inactive" id="hacker">
+                  <img src="assets/Hackers.png" />
+                  <rect></rect>
+                  <p>HACKERS</p>
+               </div>
+               <div class="option inactive" id="innovator">
+                  <img src="assets/Innovators.png" />
+                  <rect></rect>
+                  <p>INNOVATORS</p>
+               </div>
+               <div class="option inactive" id="creator">
+                  <img src="assets/Creators.png" />
+                  <rect></rect>
+                  <p>CREATORS</p>
+               </div>
+            </div>
+            <div class="web-carousel-footer">
+               <div class="character-card">
+                  <svg class="card-triangle" width="72" height="57" viewBox="0 0 72 57" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M0.557916 54.9451L35.1731 1.30775C35.5679 0.695934 36.4633 0.69774 36.8557 1.31114L71.1645 54.9485C71.5903 55.6141 71.1122 56.4873 70.3221 56.4873H1.39814C0.606177 56.4873 0.128481 55.6105 0.557916 54.9451Z"
+                        fill="#FFD884" stroke="#FFD884" stroke-width="0.5" />
+                  </svg>
+                  <div class="card-content">
+                     <h3><span>LEADERS</span></h3>
+                     <p>
+                        Bold and strong-willed, leaders have a clear direction and
+                        vision of what needs to be created and why it matters. Keeping
+                        the big picture in mind, they keep their team on track to reach
+                        high level goals while maintaining a welcoming and collaborative
+                        work environment.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="characters-mobile-section">
+         <h1>The Humans of DubHacks</h1>
+         <p id="description">
+            DubHacks prioritizes bringing together individuals from a diverse range
+            of backgrounds and experiences. Despite our differences, our community
+            is connected and united by common characteristics, values, and a passion
+            for leveraging technology to inculcate change. We've illustrated
+            characters that were designed with the intention of showcasing diverse
+            personalities and appearances, as well as the way technology can be a
+            catalyst for human interaction and collaboration. We believe the
+            descriptions of these characters are representative of the values and
+            traits exemplified by our attendees.
+         </p>
+         <div class="mobile-carousel" id="mobile-carousel">
+            <div class="option inactive" id="3">
+               <img src="assets/Innovators.png" />
+               <rect></rect>
+               <p>INNOVATORS</p>
+            </div>
+            <div class="option inactive" id="4">
+               <img src="assets/Creators.png" />
+               <rect></rect>
+               <p>CREATORS</p>
+            </div>
+            <div class="option active" id="0">
+               <img src="assets/Leader.png" />
+               <rect></rect>
+               <p>LEADERS</p>
+            </div>
+            <div class="option inactive" id="1">
+               <img src="assets/Builders.png" />
+               <rect></rect>
+               <p>BUILDERS</p>
+            </div>
+            <div class="option inactive" id="2">
+               <img src="assets/Hackers.png" />
+               <rect></rect>
+               <p>HACKERS</p>
+            </div>
+         </div>
+         <div class="mobile-carousel-footer">
+            <svg class="card-triangle" width="72" height="57" viewBox="0 0 72 57" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M0.557916 54.9451L35.1731 1.30775C35.5679 0.695934 36.4633 0.69774 36.8557 1.31114L71.1645 54.9485C71.5903 55.6141 71.1122 56.4873 70.3221 56.4873H1.39814C0.606177 56.4873 0.128481 55.6105 0.557916 54.9451Z"
+                  fill="#FFD884" stroke="#FFD884" stroke-width="0.5" />
+            </svg>
+            <div class="card-content">
+               <h3><strong></strong><span>LEADERS</span></h3>
+               <p>
+                  Bold and strong-willed, leaders have a clear direction and vision of
+                  what needs to be created and why it matters. Keeping the big picture
+                  in mind, they keep their team on track to reach high level goals
+                  while maintaining a welcoming and collaborative work environment.
+               </p>
+            </div>
+         </div>
+      </section>
+      <!--
+         <section class="tracks-section">
+           <div class="tracks-header">
+             <div class="tracks-view-text">
+               <h2>Tracks</h2>
+               <p>
+                 Particpants will have the opportunity to create projects base on
+                 their choice of a variety of tracks! In addition, we will have
+                 corporate-sponsored challenges to be announced on the day of our
+                 event.
+               </p>
+             </div>
+           </div>
+           <div class="card-group">
+             <div class="card">
+               <div class="card-header">
+                 <h3>Classic <br class="desktop-only" />Track</h3>
+                 <div>
+                   <img src="assets/track-classic.png" />
+                 </div>
+               </div>
+               <p class="card-description">
+                 Our ability to make a difference in our communities depends on our
+                 individual experiences and backgrounds. This track gives you the
+                 freedom to tackle the social good issue most important to you in
+                 whatever way you wish.
+               </p>
+             </div>
+             <div class="card">
+               <div class="card-header">
+                 <h3>Data <br class="desktop-only" />Track</h3>
+                 <div>
+                   <img src="assets/track-data.png" />
+                 </div>
+               </div>
+               <p class="card-description">
+                 Data is being generated faster than ever with every click, tap, and
+                 swipe on your screen. This track focuses on finding ways to
+                 understand and utilizing this data to inform and empower others.
+               </p>
+             </div>
+             <div class="card">
+               <div class="card-header">
+                 <h3>Community <br class="desktop-only" />Track</h3>
+                 <div>
+                   <img src="assets/track-community.png" />
+                 </div>
+               </div>
+               <p class="card-description">
+                 Technology is a powerful platform that can help us identify and address issues of inequality and accessibility
+                 within our local and global communities. In choosing this track, you are working to create a solution that
+                 assists a community you care about.
+               </p>
+             </div>
+           </div>
+         </section> -->
+      <div class="about-transition"></div>
+      <div class="section industries-section">
+         <div class="container">
+            <h1 class="section-title industries-title">
+               Industries
+            </h1>
+         </div>
+         <div class="slider">
+            <div class="slide-track">
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
+                  </div>
+               </div>
+            </div>
+            <div class="slide-track">
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
+                  </div>
+               </div>
+            </div>
+            <div class="slide-track">
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
+                  </div>
+               </div>
+            </div>
+            <div class="slide-track">
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+                  </div>
+                  <div class="down bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="up">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+                  </div>
+               </div>
+               <div class="slide">
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+                  </div>
+                  <div class="up bottom-left">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+                  </div>
+                  <div class="down">
+                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="https://www.facebook.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/facebook.png" alt="Facebook"></a>
-      
-      <a href="https://walmart.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/walmart.png" alt="Walmart Technology"></a>
-      
-      <a href="https://do.co/studenthackathon" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/digitalocean.png" alt="DigitalOcean"></a>
-      
-      <a href="https://github.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/github.png" alt="Github"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-energy" role="tabpanel" aria-labelledby="industry-energy-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/energy.svg" alt="Energy" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-      <p>Model a building’s energy consumption, gas prices, or oil accidents!</p>
-      <h6>Kaggle Competitions:</h6>
-      <ul>
-        <li><a href="https://www.kaggle.com/c/ashrae-energy-prediction" target="_blank">Energy Prediction</a></li>
-        <li><a href="https://www.kaggle.com/mabusalah/brent-oil-prices" target="_blank">Oil Prices</a> </li>
-        <li><a href="https://www.kaggle.com/usdot/pipeline-accidents" target="_blank">Pipeline Accidents</a></li>
-      </ul>
-    
-        </p>
+      <div class="modal fade" id="industry-modal">
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Industries</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body industry-modal-body">
+                  <div class="row align-items-stretch">
+                     <div class="col-lg-3 col-md-12 modal-col">
+                        <div class="nav nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
+                           <a class="nav-link industry-modal-nav-link" id="industry-technology-tab" data-toggle="pill" href="#industry-technology" role="tab" aria-controls="industry-technology" aria-selected="true">
+                           Technology
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-energy-tab" data-toggle="pill" href="#industry-energy" role="tab" aria-controls="industry-energy" aria-selected="true">
+                           Energy
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-consulting-tab" data-toggle="pill" href="#industry-consulting" role="tab" aria-controls="industry-consulting" aria-selected="true">
+                           Consulting
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-finance-tab" data-toggle="pill" href="#industry-finance" role="tab" aria-controls="industry-finance" aria-selected="true">
+                           Finance
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-transportation-tab" data-toggle="pill" href="#industry-transportation" role="tab" aria-controls="industry-transportation" aria-selected="true">
+                           Transportation
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-education-tab" data-toggle="pill" href="#industry-education" role="tab" aria-controls="industry-education" aria-selected="true">
+                           Education
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-sports-tab" data-toggle="pill" href="#industry-sports" role="tab" aria-controls="industry-sports" aria-selected="true">
+                           Sports
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-healthcare-tab" data-toggle="pill" href="#industry-healthcare" role="tab" aria-controls="industry-healthcare" aria-selected="true">
+                           Healthcare
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-aerospace-tab" data-toggle="pill" href="#industry-aerospace" role="tab" aria-controls="industry-aerospace" aria-selected="true">
+                           Aerospace
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-insurance-tab" data-toggle="pill" href="#industry-insurance" role="tab" aria-controls="industry-insurance" aria-selected="true">
+                           Insurance
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-retail-tab" data-toggle="pill" href="#industry-retail" role="tab" aria-controls="industry-retail" aria-selected="true">
+                           Retail
+                           </a>
+                           <a class="nav-link industry-modal-nav-link" id="industry-publicpolicy-tab" data-toggle="pill" href="#industry-publicpolicy" role="tab" aria-controls="industry-publicpolicy" aria-selected="true">
+                           Public Policy
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-9 col-md-12 modal-col">
+                        <div class="tab-content" id="industry-tab-content">
+                           <div class="tab-pane fade industry-modal-content" id="industry-technology" role="tabpanel" aria-labelledby="industry-technology-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/technology.svg" alt="Technology" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Can you determine sentiment from a tweet, predict a Facebook check-in, or generate appropriate tags for a YouTube video?</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                       <li><a href="https://www.kaggle.com/c/tweet-sentiment-extraction" target="_blank">Tweet Sentiments</a></li>
+                                       <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins" target="_blank">Check-In Prediction</a></li>
+                                       <li><a href="https://www.kaggle.com/c/youtube8m" target="_blank">Tag Prediction</a></li>
+                                       <ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="https://www.facebook.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/facebook.png" alt="Facebook"></a>
+                                    <a href="https://walmart.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/walmart.png" alt="Walmart Technology"></a>
+                                    <a href="https://do.co/studenthackathon" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/digitalocean.png" alt="DigitalOcean"></a>
+                                    <a href="https://github.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/github.png" alt="Github"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-energy" role="tabpanel" aria-labelledby="industry-energy-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/energy.svg" alt="Energy" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Model a building’s energy consumption, gas prices, or oil accidents!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/ashrae-energy-prediction" target="_blank">Energy Prediction</a></li>
+                                          <li><a href="https://www.kaggle.com/mabusalah/brent-oil-prices" target="_blank">Oil Prices</a> </li>
+                                          <li><a href="https://www.kaggle.com/usdot/pipeline-accidents" target="_blank">Pipeline Accidents</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="http://www.conocophillips.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/conocophillips.png" alt="ConocoPhillips"></a>
+                                    <a href="http://www.aramcoservices.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/aramco.png" alt="Aramco"></a>
+                                    <a href="https://shell.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/shell.svg" alt="Shell"></a>
+                                    <a href="https://bp.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/bp.png" alt="BP"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-consulting" role="tabpanel" aria-labelledby="industry-consulting-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/consulting.svg" alt="Consulting" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Predict property rental prices or find the most accurate system to predict chess outcomes!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/deloitte-western-australia-rental-prices" target="_blank">Rental Prices</a></li>
+                                          <li><a href="https://www.kaggle.com/c/ChessRatings2" target="_blank">Chess Outcomes</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="https://motiva.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/motiva.png" alt="Motiva"></a>
+                                    <a href="https://cbre.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/cbre.png" alt="CBRE"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-finance" role="tabpanel" aria-labelledby="industry-finance-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/finance.svg" alt="Finance" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Can you predict end of day stock returns given noisy data?</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/two-sigma-financial-modeling" target="_blank">Two Sigma</a></li>
+                                          <li><a href="https://www.kaggle.com/c/the-winton-stock-market-challenge" target="_blank">Winton Stock Returns</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="https://goldmansachs.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/goldmansachs.png" alt="Goldman Sachs"></a>
+                                    <a href="https://usaa.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/usaa.png" alt="USAA"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-transportation" role="tabpanel" aria-labelledby="industry-transportation-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/transportation.svg" alt="Transportation" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Try to identify distracted drivers, work with self-driving cars, or reduce vehicle manufacturing time.</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection" target="_blank">Distraction Detection</a></li>
+                                          <li><a href="https://www.kaggle.com/c/carvana-image-masking-challenge" target="_blank">Vehicle Recognition</a></li>
+                                          <li><a href="https://www.kaggle.com/c/mercedes-benz-greener-manufacturing" target="_blank">Optimize Manufacturing</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="https://tti.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/tti_logo.png" alt="Texas A&amp;M Transportation Institute"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-education" role="tabpanel" aria-labelledby="industry-education-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/education.svg" alt="Education" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Compare different countries' educational systems, identify college debt trends, or discover which majors & universities have the best ROI! </p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/theworldbank/education-statistics" target="_blank">Education Statistics</a></li>
+                                          <li><a href="https://www.kaggle.com/kaggle/college-scorecard" target="_blank">College Debt</a></li>
+                                          <li><a href="https://www.kaggle.com/wsj/college-salaries" target="_blank">College Salaries</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="https://engineering.tamu.edu/cse/index.html" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/csce.png" alt="Texas A&amp;M Department of Computer Science and Engineering"></a>
+                                    <a href="https://www.science.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/science.png" alt="Texas A&amp;M Science Department"></a>
+                                    <a href="http://tamids.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/tamids_logo.png" alt="Texas A&amp;M Institute of Data Science"></a>
+                                    <a href="http://stat.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/stat_logo.png" alt="Texas A&amp;M Statistics Department"></a>
+                                    <a href="http://math.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/math_logo.png" alt="Texas A&amp;M Math Department"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-sports" role="tabpanel" aria-labelledby="industry-sports-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/sports.svg" alt="Sports" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Be a true MVP and predict football yardage, injuries, or suggest rule changes to improve safety!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/nfl-big-data-bowl-2020" target="_blank">NFL Yardage Prediction</a></li>
+                                          <li><a href="https://www.kaggle.com/c/NFL-Punt-Analytics-Competition" target="_blank">NFL Punt Analysis</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-healthcare" role="tabpanel" aria-labelledby="industry-healthcare-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/healthcare.svg" alt="Healthcare" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Detect diabetic retinopathy to stop blindness or take a stab at modeling COVID-19!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/aptos2019-blindness-detection" target="_blank">Blindness Detection</a></li>
+                                          <li><a href="https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">Coronavirus Dataset</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-aerospace" role="tabpanel" aria-labelledby="industry-aerospace-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/aerospace.svg" alt="Aerospace" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Predict flight delays, space shuttle part failure, airplane crashes, and so much more!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/fabiendaniel/predicting-flight-delays-tutorial" target="_blank">Flight Delays</a></li>
+                                          <li><a href="https://www.kaggle.com/c/dat31-shuttle/notebooks" target="_blank">Shuttle Disaster</a></li>
+                                          <li><a href="https://www.kaggle.com/c/reducing-commercial-aviation-fatalities" target="_blank">Aviation Fatalities</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-insurance" role="tabpanel" aria-labelledby="industry-insurance-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/insurance.svg" alt="Insurance" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Find the right pricing for an insurance plan, predict customer retention, and classify risk!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/ClaimPredictionChallenge" target="_blank">Claim Prediction</a></li>
+                                          <li><a href="https://www.kaggle.com/c/deloitte-churn-prediction" target="_blank">Customer Loyalty</a></li>
+                                          <li><a href="https://www.kaggle.com/c/prudential-life-insurance-assessment" target="_blank">Risk Assessment</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-retail" role="tabpanel" aria-labelledby="industry-retail-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/retail.svg" alt="Retail" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Build product recommendation engines, detect fraud, personalize marketing, manage inventory, and more!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/c/santander-product-recommendation" target="_blank">Product Recommendation</a></li>
+                                          <li><a href="https://www.kaggle.com/c/ieee-fraud-detection" target="_blank">Fraud Detection</a></li>
+                                          <li><a href="https://www.kaggle.com/c/instacart-market-basket-analysis" target="_blank">Market Analysis</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <h5 class="mx-3">Past Sponsors:</h5>
+                                 <div class="industry-modal-content-sponsors">
+                                    <a href="https://walmart.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/walmart.png" alt="Walmart Technology"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade industry-modal-content" id="industry-publicpolicy" role="tabpanel" aria-labelledby="industry-publicpolicy-tab">
+                              <div class="row align-items-center justify-content-center">
+                                 <div class="col-md-12 text-center py-3 bg-gradient">
+                                    <img class="industry-modal-content-img" src="static/img/icons/publicpolicy.svg" alt="Public Policy" />
+                                 </div>
+                                 <div class="col py-3">
+                                    <div class="industry-modal-content-text">
+                                       <p class="industry-description">
+                                       <p>Investigate crime and law enforcement, the presidential election, or the census data!</p>
+                                       <h6>Kaggle Competitions:</h6>
+                                       <ul>
+                                          <li><a href="https://www.kaggle.com/benhamner/2016-us-election" target="_blank">US Election Data</a></li>
+                                          <li><a href="https://www.kaggle.com/fbi-us/california-crime" target="_blank">Crime Statistics</a></li>
+                                          <li><a href="https://www.kaggle.com/c/us-census-challenge" target="_blank">US Census</a></li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="http://www.conocophillips.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/conocophillips.png" alt="ConocoPhillips"></a>
-      
-      <a href="http://www.aramcoservices.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/aramco.png" alt="Aramco"></a>
-      
-      <a href="https://shell.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/shell.svg" alt="Shell"></a>
-      
-      <a href="https://bp.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/bp.png" alt="BP"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-consulting" role="tabpanel" aria-labelledby="industry-consulting-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/consulting.svg" alt="Consulting" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-      <p>Predict property rental prices or find the most accurate system to predict chess outcomes!</p>
-      <h6>Kaggle Competitions:</h6>
-      <ul>
-        <li><a href="https://www.kaggle.com/c/deloitte-western-australia-rental-prices" target="_blank">Rental Prices</a></li>
-        <li><a href="https://www.kaggle.com/c/ChessRatings2" target="_blank">Chess Outcomes</a></li>
-      </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="https://motiva.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/motiva.png" alt="Motiva"></a>
-      
-      <a href="https://cbre.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/cbre.png" alt="CBRE"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-finance" role="tabpanel" aria-labelledby="industry-finance-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/finance.svg" alt="Finance" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Can you predict end of day stock returns given noisy data?</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/c/two-sigma-financial-modeling" target="_blank">Two Sigma</a></li>
-        <li><a href="https://www.kaggle.com/c/the-winton-stock-market-challenge" target="_blank">Winton Stock Returns</a></li>
-    </ul>
-
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="https://goldmansachs.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/goldmansachs.png" alt="Goldman Sachs"></a>
-      
-      <a href="https://usaa.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/usaa.png" alt="USAA"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-transportation" role="tabpanel" aria-labelledby="industry-transportation-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/transportation.svg" alt="Transportation" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Try to identify distracted drivers, work with self-driving cars, or reduce vehicle manufacturing time.</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection" target="_blank">Distraction Detection</a></li>
-        <li><a href="https://www.kaggle.com/c/carvana-image-masking-challenge" target="_blank">Vehicle Recognition</a></li>
-        <li><a href="https://www.kaggle.com/c/mercedes-benz-greener-manufacturing" target="_blank">Optimize Manufacturing</a></li>
-    </ul>
-
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="https://tti.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/tti_logo.png" alt="Texas A&amp;M Transportation Institute"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-education" role="tabpanel" aria-labelledby="industry-education-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/education.svg" alt="Education" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Compare different countries' educational systems, identify college debt trends, or discover which majors & universities have the best ROI! </p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/theworldbank/education-statistics" target="_blank">Education Statistics</a></li>
-        <li><a href="https://www.kaggle.com/kaggle/college-scorecard" target="_blank">College Debt</a></li>
-        <li><a href="https://www.kaggle.com/wsj/college-salaries" target="_blank">College Salaries</a></li>
-    </ul>
-
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="https://engineering.tamu.edu/cse/index.html" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/csce.png" alt="Texas A&amp;M Department of Computer Science and Engineering"></a>
-      
-      <a href="https://www.science.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/science.png" alt="Texas A&amp;M Science Department"></a>
-      
-      <a href="http://tamids.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/tamids_logo.png" alt="Texas A&amp;M Institute of Data Science"></a>
-      
-      <a href="http://stat.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/stat_logo.png" alt="Texas A&amp;M Statistics Department"></a>
-      
-      <a href="http://math.tamu.edu/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/math_logo.png" alt="Texas A&amp;M Math Department"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-sports" role="tabpanel" aria-labelledby="industry-sports-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/sports.svg" alt="Sports" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Be a true MVP and predict football yardage, injuries, or suggest rule changes to improve safety!</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/c/nfl-big-data-bowl-2020" target="_blank">NFL Yardage Prediction</a></li>
-        <li><a href="https://www.kaggle.com/c/NFL-Punt-Analytics-Competition" target="_blank">NFL Punt Analysis</a></li>
-    </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-healthcare" role="tabpanel" aria-labelledby="industry-healthcare-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/healthcare.svg" alt="Healthcare" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Detect diabetic retinopathy to stop blindness or take a stab at modeling COVID-19!</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/c/aptos2019-blindness-detection" target="_blank">Blindness Detection</a></li>
-        <li><a href="https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">Coronavirus Dataset</a></li>
-    </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-aerospace" role="tabpanel" aria-labelledby="industry-aerospace-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/aerospace.svg" alt="Aerospace" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Predict flight delays, space shuttle part failure, airplane crashes, and so much more!</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/fabiendaniel/predicting-flight-delays-tutorial" target="_blank">Flight Delays</a></li>
-        <li><a href="https://www.kaggle.com/c/dat31-shuttle/notebooks" target="_blank">Shuttle Disaster</a></li>
-        <li><a href="https://www.kaggle.com/c/reducing-commercial-aviation-fatalities" target="_blank">Aviation Fatalities</a></li>
-    </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-insurance" role="tabpanel" aria-labelledby="industry-insurance-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/insurance.svg" alt="Insurance" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Find the right pricing for an insurance plan, predict customer retention, and classify risk!</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/c/ClaimPredictionChallenge" target="_blank">Claim Prediction</a></li>
-        <li><a href="https://www.kaggle.com/c/deloitte-churn-prediction" target="_blank">Customer Loyalty</a></li>
-        <li><a href="https://www.kaggle.com/c/prudential-life-insurance-assessment" target="_blank">Risk Assessment</a></li>
-    </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-retail" role="tabpanel" aria-labelledby="industry-retail-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/retail.svg" alt="Retail" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Build product recommendation engines, detect fraud, personalize marketing, manage inventory, and more!</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/c/santander-product-recommendation" target="_blank">Product Recommendation</a></li>
-        <li><a href="https://www.kaggle.com/c/ieee-fraud-detection" target="_blank">Fraud Detection</a></li>
-        <li><a href="https://www.kaggle.com/c/instacart-market-basket-analysis" target="_blank">Market Analysis</a></li>
-    </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
-    <div class="industry-modal-content-sponsors">
-      
-      <a href="https://walmart.com/" target="_blank"><img class="industry-modal-sponsor-img" src="static/img/sponsors/past/walmart.png" alt="Walmart Technology"></a>
-      
-    </div>
-  </div>
-  
-</div>
-              
-              <div class="tab-pane fade industry-modal-content" id="industry-publicpolicy" role="tabpanel" aria-labelledby="industry-publicpolicy-tab">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-md-12 text-center py-3 bg-gradient">
-      <img class="industry-modal-content-img" src="static/img/icons/publicpolicy.svg" alt="Public Policy" />
-    </div>
-    <div class="col py-3">
-      <div class="industry-modal-content-text">
-        <p class="industry-description">
-          
-    <p>Investigate crime and law enforcement, the presidential election, or the census data!</p>
-    <h6>Kaggle Competitions:</h6>
-    <ul>
-        <li><a href="https://www.kaggle.com/benhamner/2016-us-election" target="_blank">US Election Data</a></li>
-        <li><a href="https://www.kaggle.com/fbi-us/california-crime" target="_blank">Crime Statistics</a></li>
-        <li><a href="https://www.kaggle.com/c/us-census-challenge" target="_blank">US Census</a></li>
-    </ul>
-    
-        </p>
-      </div>
-    </div>
-  </div>
-  
-</div>
-              
+      <div class="industries-transition"></div>
+      <section class="schedule-section">
+         <div class="schedule-desktop">
+            <div class="left-pane pane">
+               <div class="calday">
+                  <h3>Day 1</h3>
+                  <p class="date">Saturday, August 8</p>
+                  <div class="events-container">
+                     <div class="event">
+                        <span class="event-name">Registration</span>
+                        <span class="event-time">11:30 AM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Opening Cermony</span>
+                        <span class="event-time">12:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Hacking Begins</span>
+                        <span class="event-time">01:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Team Formation</span>
+                        <span class="event-time">01:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Workshops</span>
+                        <span class="event-time">02:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Puppies</span>
+                        <span class="event-time">04:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Dinner</span>
+                        <span class="event-time">07:00 PM</span>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="industries-transition"></div>
-
-  
-    
-    
-    
-  <section class="schedule-section">
-    <div class="schedule-desktop">
-      <div class="left-pane pane">
-        <div class="calday">
-          <h3>Day 1</h3>
-          <p class="date">Saturday, August 8</p>
-          <div class="events-container">
-            <div class="event">
-              <span class="event-name">Registration</span>
-              <span class="event-time">11:30 AM</span>
+            <div class="right-pane pane">
+               <h2>What's Going Down</h2>
+               <div class="calday">
+                  <h3>Day 2</h3>
+                  <p class="date">Sunday, August 9</p>
+                  <div class="events-container">
+                     <div class="event">
+                        <span class="event-name">Breakfast</span>
+                        <span class="event-time">07:30 AM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Lunch</span>
+                        <span class="event-time">11:30 AM</span>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="event">
-              <span class="event-name">Opening Cermony</span>
-              <span class="event-time">12:00 PM</span>
+         </div>
+         <div class="schedule-mobile">
+            <div id="day-selector">
+               <button id="day1-btn" class="day active">Day 1</button>
+               <button id="day2-btn" class="day">Day 2</button>
+               <div id="active-day-marker"></div>
             </div>
-            <div class="event">
-              <span class="event-name">Hacking Begins</span>
-              <span class="event-time">01:00 PM</span>
+            <div id="day-panes">
+               <div id="day1-pane" class="calday active">
+                  <p class="date">Saturday, August 8</p>
+                  <div class="events-container">
+                     <div class="event">
+                        <span class="event-name">Registration</span>
+                        <span class="event-time">11:30 AM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Opening Cermony</span>
+                        <span class="event-time">12:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Lunch</span>
+                        <span class="event-time">12:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Hacking Begins</span>
+                        <span class="event-time">01:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Team Formation</span>
+                        <span class="event-time">01:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Workshops</span>
+                        <span class="event-time">02:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Puppies</span>
+                        <span class="event-time">04:00 PM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Dinner</span>
+                        <span class="event-time">07:00 PM</span>
+                     </div>
+                  </div>
+               </div>
+               <div id="day2-pane" class="calday">
+                  <p class="date">Sunday, August 9</p>
+                  <div class="events-container">
+                     <div class="event">
+                        <span class="event-name">Breakfast</span>
+                        <span class="event-time">07:30 AM</span>
+                     </div>
+                     <div class="event">
+                        <span class="event-name">Lunch</span>
+                        <span class="event-time">11:30 AM</span>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="event">
-              <span class="event-name">Team Formation</span>
-              <span class="event-time">01:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Workshops</span>
-              <span class="event-time">02:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Puppies</span>
-              <span class="event-time">04:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Dinner</span>
-              <span class="event-time">07:00 PM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="right-pane pane">
-        <h2>What's Going Down</h2>
-
-        <div class="calday">
-          <h3>Day 2</h3>
-          <p class="date">Sunday, August 9</p>
-          <div class="events-container">
-            <div class="event">
-              <span class="event-name">Breakfast</span>
-              <span class="event-time">07:30 AM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Lunch</span>
-              <span class="event-time">11:30 AM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="schedule-mobile">
-      <div id="day-selector">
-        <button id="day1-btn" class="day active">Day 1</button>
-        <button id="day2-btn" class="day">Day 2</button>
-        <div id="active-day-marker"></div>
-      </div>
-      <div id="day-panes">
-        <div id="day1-pane" class="calday active">
-          <p class="date">Saturday, August 8</p>
-          <div class="events-container">
-            <div class="event">
-              <span class="event-name">Registration</span>
-              <span class="event-time">11:30 AM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Opening Cermony</span>
-              <span class="event-time">12:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Lunch</span>
-              <span class="event-time">12:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Hacking Begins</span>
-              <span class="event-time">01:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Team Formation</span>
-              <span class="event-time">01:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Workshops</span>
-              <span class="event-time">02:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Puppies</span>
-              <span class="event-time">04:00 PM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Dinner</span>
-              <span class="event-time">07:00 PM</span>
-            </div>
-          </div>
-        </div>
-        <div id="day2-pane" class="calday">
-          <p class="date">Sunday, August 9</p>
-          <div class="events-container">
-            <div class="event">
-              <span class="event-name">Breakfast</span>
-              <span class="event-time">07:30 AM</span>
-            </div>
-            <div class="event">
-              <span class="event-name">Lunch</span>
-              <span class="event-time">11:30 AM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="schedule-section">
+         </div>
+      </section>
+      <section class="schedule-section">
          <div class="schedule-desktop">
             <div class="left-pane pane">
                <div class="calday">
@@ -1260,10 +1112,7 @@ We want to inspire students to discover the world around them by empowering them
             </div>
          </div>
       </section>
-            
-            
-            
-            <section class="schedule-section">
+      <section class="schedule-section">
          <div class="schedule-desktop">
             <div class="left-pane pane">
                <div class="calday">
@@ -1374,8 +1223,7 @@ We want to inspire students to discover the world around them by empowering them
             </div>
          </div>
       </section>
-            
-            <section class="schedule-section">
+      <section class="schedule-section">
          <div class="schedule-desktop">
             <div class="left-pane pane">
                <div class="calday">
@@ -1494,195 +1342,249 @@ We want to inspire students to discover the world around them by empowering them
             </div>
          </div>
       </section>
-            
-            
-  <section class="join-section">
-    <div class="join-header">
-      <div class="join-view-text">
-        <h2>Join Us</h2>
-        <p>
-          DubHacks is entirely student organized and run. This means support from industry mentors and volunteers is
-          integral to the success of our event. Register to be a mentor or volunteer today!
-        </p>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <div class="card-header">
-          <h3>Join as mentor</h3>
-        </div>
-        <p class="card-description">
-          As a mentor, you'll provide guidance and advice to our hackers as they build solutions to pressing problems in
-          our community.
-        </p>
-        <a class="join-btn" href="https://dubhacks19f.typeform.com/to/WiOpGP">Join as a mentor</a>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h3>Join as volunteer</h3>
-        </div>
-        <p class="card-description">
-          As a volunteer, you'll support our hackers as they participate in the largest hackathon in the Pacific
-          Northwest.
-        </p>
-        <a class="join-btn" href="https://dubhacks19f.typeform.com/to/u4nMeB">Join as a volunteer</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="sponsors-section">
-    <h2>Our Sponsors</h2>
-    <!--
-    <div class="sponsors-container big">
-      <div class="sponsor">
-        <a href="https://privacy.microsoft.com/en-us/privacystatement"><img
-            src="assets/sponsor-logos/microsoft.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
-            src="assets/sponsor-logos/Deloitte.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
-      </div>
-    </div>
-  -->
-  </section>
-
-
-
-
-
-
-<section class="sponsors-section">
-    <h2>Our Speakers</h2>
-    <!--
-    <div class="sponsors-container big">
-      <div class="sponsor">
-        <a href="https://privacy.microsoft.com/en-us/privacystatement"><img
-            src="assets/sponsor-logos/microsoft.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
-            src="assets/sponsor-logos/Deloitte.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
-      </div>
-    </div>
-  -->
-  </section>
-
-
-
-
-
-
-
-<section class="sponsors-section">
-    <h2>Our Team</h2>
-    <div class="sponsors-container big">
-      <div class="sponsor">
-        <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="assets/team/me.jpg" />
+      <section class="join-section">
+         <div class="join-header">
+            <div class="join-view-text">
+               <h2>Join Us</h2>
+               <p>
+                  DubHacks is entirely student organized and run. This means support from industry mentors and volunteers is
+                  integral to the success of our event. Register to be a mentor or volunteer today!
+               </p>
+            </div>
+         </div>
+         <div class="card-group">
+            <div class="card">
+               <div class="card-header">
+                  <h3>Join as mentor</h3>
+               </div>
+               <p class="card-description">
+                  As a mentor, you'll provide guidance and advice to our hackers as they build solutions to pressing problems in
+                  our community.
+               </p>
+               <a class="join-btn" href="https://dubhacks19f.typeform.com/to/WiOpGP">Join as a mentor</a>
+            </div>
+            <div class="card">
+               <div class="card-header">
+                  <h3>Join as volunteer</h3>
+               </div>
+               <p class="card-description">
+                  As a volunteer, you'll support our hackers as they participate in the largest hackathon in the Pacific
+                  Northwest.
+               </p>
+               <a class="join-btn" href="https://dubhacks19f.typeform.com/to/u4nMeB">Join as a volunteer</a>
+            </div>
+         </div>
+      </section>
+      <section class="sponsors-section">
+         <h2>Our Sponsors</h2>
+         <!--
+            <div class="sponsors-container big">
+              <div class="sponsor">
+                <a href="https://privacy.microsoft.com/en-us/privacystatement"><img
+                    src="assets/sponsor-logos/microsoft.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
+                    src="assets/sponsor-logos/Deloitte.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
+              </div>
+            </div>
+            -->
+      </section>
+      <section class="sponsors-section">
+         <h2>Our Speakers</h2>
+         <!--
+            <div class="sponsors-container big">
+              <div class="sponsor">
+                <a href="https://privacy.microsoft.com/en-us/privacystatement"><img
+                    src="assets/sponsor-logos/microsoft.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
+                    src="assets/sponsor-logos/Deloitte.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
+              </div>
+              <div class="sponsor">
+                <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
+              </div>
+            </div>
+            <div class="sponsors-container">
+              <div class="sponsor">
+                <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
+              </div>
+            </div>
+            -->
+      </section>
+      <section class="sponsors-section">
+         <h2>Our Team</h2>
+         <div class="sponsors-container big">
+         <div class="sponsor">
+            <a href="assets/team/me.jpg"/></a>
+            <h4>Krishnanshu Gupta<br>Executive Director</h4>
+         </div>
+         <!--
+            <div class="sponsor">
+              <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
+            </div>
+            </div>
+            <div class="sponsors-container">
+            <div class="sponsor">
+              <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
+            </div>
+            </div>
+            <div class="sponsors-container">
+            <div class="sponsor">
+              <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
+                  src="assets/sponsor-logos/Deloitte.png" /></a>
+            </div>
+            </div>
+            <div class="sponsors-container">
+            <div class="sponsor">
+              <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
+            </div>
+            </div>
+            <div class="sponsors-container">
+            <div class="sponsor">
+              <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
+            </div>
+            </div>
+            <div class="sponsors-container">
+            <div class="sponsor">
+              <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
+            </div>
+            </div>
+            -->
+      </section>
+      <section class="sponsors-section">
+         <div id="team" class="container">
+            <h1 class="section-title team-title">
+               Team
+            </h1>
+            <div class="row justify-content-center py-5">
+               
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/josiah.jpg" />
                      <div class="card-body">
                         <h5 class="card-title team-card-title text-center mb-2">
                            Josiah Coad
@@ -1704,606 +1606,433 @@ We want to inspire students to discover the world around them by empowering them
                         </div>
                      </div>
                   </div>
+               
+              
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/allyson.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Allyson King
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Vice President
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/allysonmking/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/allysonmking" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/hana.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Hana Farid
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Design Director
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/hana-b-farid-364194168/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100017620691192" target="_blank">
+                           <i class="fab fa-facebook fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/felicia.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Felicia Invedy
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Design Director
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/felicia-i-873305170/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.tamu.edu/finvedy" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/george.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           George Thayamkery
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Tech Director
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/georgebt/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/geooot" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/will.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           William Zhao
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Logistics
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/willz123/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/VisionZ" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/dan.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Daniel Abreo
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Tech
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/abreo/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/danielabreo" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/aditya.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Aditya Pethe
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Logistics
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/aditya-pethe" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/aditya-pethe" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/joshua.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Joshua Jung
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Logistics
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/joshuajung01/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/joshuajung01" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/yun.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Yun Phelps
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Design
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/yun-phelps" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100005184465296" target="_blank">
+                           <i class="fab fa-facebook fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/jon.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Jonathan Waterman
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Logistics
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/jonrwaterman/" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/jonwaterman?tab=repositories" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/samarth.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Samarth Dave
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Tech
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/s-dave" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/samarthdave" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/chinmay.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Chinmay Phulse
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Tech
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/chinmay-phulse-b33907135" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://github.com/phulsechinmay" target="_blank">
+                           <i class="fab fa-github-square fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+                  <div class="card team-card">
+                     <img class="card-img-top team-card-img" src="static/img/team/seth.jpg" />
+                     <div class="card-body">
+                        <h5 class="card-title team-card-title text-center mb-2">
+                           Seth Hamilton
+                        </h5>
+                        <div class="text-center mb-2">
+                           <small class="text-muted">
+                           Logistics
+                           </small>
+                        </div>
+                        <div class="text-center">
+                           <span class="link-span">
+                           <a class="team-social-link" href="https://www.linkedin.com/in/hamilton-seth" target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                           </a>
+                           <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100015958353174" target="_blank">
+                           <i class="fab fa-facebook fa-lg"></i>
+                           </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <section class="logo-group group">
+            <img class="footer-logo" src="assets/logo.svg" />
+            <p class="footer-flair-text">Made with &lt;3 in Seattle</p>
+            <div class="footer-socials">
+               <a href="https://www.facebook.com/DubHacks-1497687910461792/" target="_blank">
+               <img src="assets/icon_facebook.svg" />
+               </a>
+               <a href="https://medium.com/@DubHacks" target="_blank">
+               <img src="assets/icon_medium.svg" />
+               </a>
+               <a href="https://twitter.com/DubHacks" target="_blank">
+               <img src="assets/icon_twitter.svg" />
+               </a>
+               <a href="cdn-cgi/l/email-protection.html#731a1d151c333706113b121018005d101c">
+               <img src="assets/icon_mail.svg" />
+               </a>
+            </div>
+         </section>
+         <section class="links-group group">
+            <h2>Links</h2>
+            <ul>
+               <li><a href="https://apply.DubHacks.co" target="_blank">Applications</a></li>
+               <li><a href="conduct.html">Code of Conduct</a></li>
+               <li><a href="faq.html">FAQ</a></li>
+            </ul>
+         </section>
+         <section class="team-group group">
+            <h2>Our Team</h2>
+            <div class="team-container">
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/libbyknell/', '_blank');"></div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/sharanjhangiani/', '_blank');">
+               </div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/chloe-wen/', '_blank');"></div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/adam-towers/', '_blank');">
+               </div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/marymwojnar/', '_blank');">
+               </div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/liangn/', '_blank');"></div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/jamesmchen/', '_blank');"></div>
+               <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/taylor-ka/', '_blank');"></div>
+               <div class="team-member-pic"
+                  onclick="window.open('https\://www.linkedin.com/in/justin-b-246731122/', '_blank');"></div>
+               <div class="team-member-pic"
+                  onclick="window.open('https\://www.linkedin.com/in/daniel-kim-7bbb3015b/', '_blank');"></div>
+            </div>
+         </section>
+      </footer>
+      <div class="color-border-footer">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
       </div>
-  <!--
-      <div class="sponsor">
-        <a href="https://www.bloomberg.com/careers"><img src="assets/sponsor-logos/bloomberg.png" /></a>
+      <div id="typed-strings" style="display:none;">
+         <p>idea.</p>
+         <p>design.</p>
+         <p>experience.</p>
+         <p>story.</p>
+         <p>challenge.</p>
       </div>
-      <div class="sponsor">
-        <a href="https://allenai.org/jobs/"><img src="assets/sponsor-logos/ai2.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.qualtrics.com/"><img src="assets/sponsor-logos/qualtrics.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.lyft.com/jobs"><img src="assets/sponsor-logos/lyf.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.facebook.com/careers"><img src="assets/sponsor-logos/facebook.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://catalyst.amazon.com/uw/"><img src="assets/sponsor-logos/amazonCata.svg" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www2.deloitte.com/us/en/pages/careers/topics/careers.html"><img
-            src="assets/sponsor-logos/Deloitte.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://careers.google.com"><img src="assets/sponsor-logos/google.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.blueorigin.com/careers"><img src="assets/sponsor-logos/blueorigin.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.dreambox.com/careers"><img src="assets/sponsor-logos/dreambox.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="https://www.trueform.io/careers"><img src="assets/sponsor-logos/trueform.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://flatironschool.com/campuses/seattle/?utm_source=Google&amp;utm_medium=ppc&amp;utm_campaign=1783325438&amp;utm_content=67552320645&amp;utm_term=flatiron%20school%20seattle&amp;uqaid=343787786397&amp;EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE&amp;gclid=EAIaIQobChMIisyujYfo5AIVYh6tBh00ugyMEAAYAiAAEgLDEvD_BwE"><img src="assets/sponsor-logos/flatiron.png" /></a>
-      </div>
-      <div class="sponsor">
-        <a href="https://www.slalom.com/careers"><img src="assets/sponsor-logos/slalom.png" /></a>
-      </div>
-    </div>
-    <div class="sponsors-container">
-      <div class="sponsor">
-        <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
-      </div>
-    </div>
-  -->
-  </section>
-
-
-
-
-
-<section class="sponsors-section">
-  <div id="team" class="container">
-    <h1 class="section-title team-title">
-      Team
-    </h1>
-    <div class="row justify-content-center py-5">
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/josiah.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Josiah Coad
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        President
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/josiahcoad" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/josiahcoad" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/allyson.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Allyson King
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Vice President
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/allysonmking/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/allysonmking" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/hana.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Hana Farid
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Design Director
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/hana-b-farid-364194168/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100017620691192" target="_blank">
-          <i class="fab fa-facebook fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/felicia.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Felicia Invedy
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Design Director
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/felicia-i-873305170/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.tamu.edu/finvedy" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/george.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      George Thayamkery
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Tech Director
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/georgebt/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/geooot" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/will.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      William Zhao
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Logistics
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/willz123/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/VisionZ" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/dan.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Daniel Abreo
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Tech
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/abreo/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/danielabreo" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/aditya.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Aditya Pethe
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Logistics
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/aditya-pethe" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/aditya-pethe" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/joshua.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Joshua Jung
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Logistics
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/joshuajung01/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/joshuajung01" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/yun.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Yun Phelps
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Design
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/yun-phelps" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100005184465296" target="_blank">
-          <i class="fab fa-facebook fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/jon.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Jonathan Waterman
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Logistics
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/jonrwaterman/" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/jonwaterman?tab=repositories" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/samarth.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Samarth Dave
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Tech
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/s-dave" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/samarthdave" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/chinmay.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Chinmay Phulse
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Tech
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/chinmay-phulse-b33907135" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://github.com/phulsechinmay" target="_blank">
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
-        <div class="card team-card">
-  <img class="card-img-top team-card-img" src="static/img/team/seth.jpg" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      Seth Hamilton
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        Logistics
-      </small>
-    </div>
-    <div class="text-center">
-      <span class="link-span">
-        
-        <a class="team-social-link" href="https://www.linkedin.com/in/hamilton-seth" target="_blank">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        
-        <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100015958353174" target="_blank">
-          <i class="fab fa-facebook fa-lg"></i>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-
-
-
-  
-  <footer>
-    <section class="logo-group group">
-      <img class="footer-logo" src="assets/logo.svg" />
-      <p class="footer-flair-text">Made with &lt;3 in Seattle</p>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/DubHacks-1497687910461792/" target="_blank">
-          <img src="assets/icon_facebook.svg" />
-        </a>
-        <a href="https://medium.com/@DubHacks" target="_blank">
-          <img src="assets/icon_medium.svg" />
-        </a>
-        <a href="https://twitter.com/DubHacks" target="_blank">
-          <img src="assets/icon_twitter.svg" />
-        </a>
-        <a href="cdn-cgi/l/email-protection.html#731a1d151c333706113b121018005d101c">
-          <img src="assets/icon_mail.svg" />
-        </a>
-      </div>
-    </section>
-    <section class="links-group group">
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://apply.DubHacks.co" target="_blank">Applications</a></li>
-        <li><a href="conduct.html">Code of Conduct</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </section>
-    <section class="team-group group">
-      <h2>Our Team</h2>
-      <div class="team-container">
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/libbyknell/', '_blank');"></div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/sharanjhangiani/', '_blank');">
-        </div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/chloe-wen/', '_blank');"></div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/adam-towers/', '_blank');">
-        </div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/marymwojnar/', '_blank');">
-        </div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/liangn/', '_blank');"></div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/jamesmchen/', '_blank');"></div>
-        <div class="team-member-pic" onclick="window.open('https\://www.linkedin.com/in/taylor-ka/', '_blank');"></div>
-        <div class="team-member-pic"
-          onclick="window.open('https\://www.linkedin.com/in/justin-b-246731122/', '_blank');"></div>
-        <div class="team-member-pic"
-          onclick="window.open('https\://www.linkedin.com/in/daniel-kim-7bbb3015b/', '_blank');"></div>
-      </div>
-    </section>
-  </footer>
-
-  <div class="color-border-footer">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  
-  <div id="typed-strings" style="display:none;">
-        <p>idea.</p>
-        <p>design.</p>
-        <p>experience.</p>
-        <p>story.</p>
-        <p>challenge.</p>
-
-    </div>
-  <script>
-      var messages=["idea.", "design.", "experience.", "story.", "challenge."];
-      var rank=0;
-
-      // Code for Chrome, Safari and Opera
-      document.getElementById("myTypewriter").addEventListener("webkitAnimationEnd", changeTxt);
-
-      // Standard syntax
-      document.getElementById("myTypewriter").addEventListener("animationend", changeTxt);
-
-      function changeTxt(e){
-        _h1 = this.getElementsByTagName("h1")[0];
-        _h1.style.webkitAnimation = 'none'; // set element animation to none
-         setTimeout(function() { // you surely want a delay before the next message appears
-            _h1.innerHTML=messages[rank];
-            var speed =3.5*messages[rank].length/20; // adjust the speed (3.5 is the original speed, 20 is the original string length
-            _h1.style.webkitAnimation = 'typing '+speed+'s steps(40, end), blink-caret .75s step-end infinite'; //  switch to the original set of animation      
-            (rank===messages.length-1)?rank=0:rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
-          }, 1000);
-      }
-  </script>
-  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script type="text/javascript" src="scripts/character.js"></script>
-  <script type="text/javascript" src="scripts/mobileSchedule.js"></script>
-  <script type="text/javascript" src="scripts/nav.js"></script>
-   
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/jquery@3.4.0/dist/jquery.slim.min.js" integrity="sha384-7WBfQYubrFpye+dGHEeA3fHaTy/wpTFhxdjxqvK04e4orV3z+X4XC4qOX3qnkVC6" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async="async"></script>
-
-<script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
-<script src="https://unpkg.com/tippy.js@6.2.3/dist/tippy-bundle.umd.min.js"></script>
-
-<script src="static/js/index.js" type="text/javascript"></script>
-
-<!-- Font Awesome 5 -->
-<script src="https://kit.fontawesome.com/db6415d72b.js" async="async"></script>
-
-
-   <script>
-        var typed = new Typed('#typewriter', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 60,
-            backSpeed: 40
-        });
-    </script>
-</body>
-
+      <script>
+         var messages=["idea.", "design.", "experience.", "story.", "challenge."];
+         var rank=0;
+         
+         // Code for Chrome, Safari and Opera
+         document.getElementById("myTypewriter").addEventListener("webkitAnimationEnd", changeTxt);
+         
+         // Standard syntax
+         document.getElementById("myTypewriter").addEventListener("animationend", changeTxt);
+         
+         function changeTxt(e){
+           _h1 = this.getElementsByTagName("h1")[0];
+           _h1.style.webkitAnimation = 'none'; // set element animation to none
+            setTimeout(function() { // you surely want a delay before the next message appears
+               _h1.innerHTML=messages[rank];
+               var speed =3.5*messages[rank].length/20; // adjust the speed (3.5 is the original speed, 20 is the original string length
+               _h1.style.webkitAnimation = 'typing '+speed+'s steps(40, end), blink-caret .75s step-end infinite'; //  switch to the original set of animation      
+               (rank===messages.length-1)?rank=0:rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
+             }, 1000);
+         }
+      </script>
+      <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="scripts/character.js"></script>
+      <script type="text/javascript" src="scripts/mobileSchedule.js"></script>
+      <script type="text/javascript" src="scripts/nav.js"></script>
+      <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/jquery@3.4.0/dist/jquery.slim.min.js" integrity="sha384-7WBfQYubrFpye+dGHEeA3fHaTy/wpTFhxdjxqvK04e4orV3z+X4XC4qOX3qnkVC6" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async="async"></script>
+      <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+      <script src="https://unpkg.com/tippy.js@6.2.3/dist/tippy-bundle.umd.min.js"></script>
+      <script src="static/js/index.js" type="text/javascript"></script>
+      <!-- Font Awesome 5 -->
+      <script src="https://kit.fontawesome.com/db6415d72b.js" async="async"></script>
+      <script>
+         var typed = new Typed('#typewriter', {
+             stringsElement: '#typed-strings',
+             typeSpeed: 60,
+             backSpeed: 40
+         });
+      </script>
+   </body>
 </html>
