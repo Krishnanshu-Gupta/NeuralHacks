@@ -845,6 +845,18 @@ body {
       transform: translateX(-1000%); }
     .schedule-section .schedule-mobile #day-panes #day2-pane {
       transform: translateX(1000%); }
+    .schedule-section .schedule-mobile #day-panes #day3-pane {
+      transform: translateX(-1000%); }
+    .schedule-section .schedule-mobile #day-panes #day4-pane {
+      transform: translateX(1000%); }
+    .schedule-section .schedule-mobile #day-panes #day5-pane {
+      transform: translateX(-1000%); }
+    .schedule-section .schedule-mobile #day-panes #day6-pane {
+      transform: translateX(1000%); }
+    .schedule-section .schedule-mobile #day-panes #day7-pane {
+      transform: translateX(-1000%); }
+    .schedule-section .schedule-mobile #day-panes #day8-pane {
+      transform: translateX(1000%); }
 
 .join-section .join-header {
   display: flex;
