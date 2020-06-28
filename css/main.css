@@ -1328,3 +1328,40 @@ body {
     height: fit-content; }
   .card-header img {
     height: 51px; }
+	white-space:nowrap;
+	background-color:#e9ecef;
+	border:1px solid #ced4da;
+	border-radius:.25rem
+}
+.input-group-text input[type="radio"],.input-group-text input[type="checkbox"]{
+	margin-top:0
+}
+.input-group-lg>.form-control:not(textarea),.input-group-lg>.custom-select{
+	height:calc(1.5em + 1rem + 2px)
+}
+.input-group-lg>.form-control,.input-group-lg>.custom-select,.input-group-lg>.input-group-prepend>.input-group-text,.input-group-lg>.input-group-append>.input-group-text,.input-group-lg>.input-group-prepend>.btn,.input-group-lg>.input-group-append>.btn{
+	padding:.5rem 1rem;
+	font-size:1.25rem;
+	line-height:1.5;
+	border-radius:.3rem
+}
+.input-group-sm>.form-control:not(textarea),.input-group-sm>.custom-select{
+	height:calc(1.5em + .5rem + 2px)
+}
+.input-group-sm>.form-control,.input-group-sm>.custom-select,.input-group-sm>.input-group-prepend>.input-group-text,.input-group-sm>.input-group-append>.input-group-text,.input-group-sm>.input-group-prepend>.btn,.input-group-sm>.input-group-append>.btn{
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.input-group-lg>.custom-select,.input-group-sm>.custom-select{
+	padding-right:1.75rem
+}
+.input-group>.input-group-prepend>.btn,.input-group>.input-group-prepend>.input-group-text,.input-group>.input-group-append:not(:last-child)>.btn,.input-group>.input-group-append:not(:last-child)>.input-group-text,.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),.input-group>.input-group-append:last-child>.input-group-text:not(:last-child){
+	border-top-right-radius:0;
+	border-bottom-right-radius:0
+}
+.input-group>.input-group-append>.btn,.input-group>.input-group-append>.input-group-text,.input-group>.input-group-prepend:not(:first-child)>.btn,.input-group>.input-group-prepend:not(:first-child)>.input-group-text,.input-group>.input-group-prepend:first-child>.btn:not(:first-child),.input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child){
+	border-top-left-radius:0;
+	border-bottom-left-radius:0
+}
