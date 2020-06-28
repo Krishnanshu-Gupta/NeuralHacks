@@ -146,6 +146,7 @@ nav {
           font-size: 0.75rem; } }
       nav ul li a {
         color: black;
+	text-decoration: none; }
         nav ul li a:hover {
           color: #2b39bf; }
   nav .mobile-menu {
