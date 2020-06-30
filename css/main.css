@@ -190,18 +190,18 @@ nav {
         font-size: 1.777rem;
         align-self: center;
         color: #ea4359; }
-
+/*
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden; /* Ensures the content is not revealed until the animation 
+  border-right: .15em solid orange; /* The typwriter cursor 
+  white-space: nowrap; /* Keeps the content on a single line 
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+  letter-spacing: .15em; /* Adjust as needed 
   animation: 
   typing 3.5s steps(40, end),
   blink-caret .75s step-end infinite;
 }
-
+*/
 /*
 body {
   background: #333;
@@ -1325,7 +1325,8 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center; 
+ background-color: transparent;}
   .card-header div {
     width: 66px;
     height: fit-content; }
@@ -1431,10 +1432,12 @@ hr{
 	height:0;
 	overflow:visible
 }
+/*
 h1,h2,h3,h4,h5,h6{
 	margin-top:0;
 	margin-bottom:.5rem
 }
+*/
 p{
 	margin-top:0;
 	margin-bottom:1rem
@@ -1630,14 +1633,18 @@ template{
 [hidden]{
 	display:none !important
 }
+/*
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	margin-bottom:.5rem;
 	font-weight:500;
 	line-height:1.2
 }
+*/
+/*
 h1,.h1{
 	font-size:2.5rem
 }
+*/
 h2,.h2{
 	font-size:2rem
 }
@@ -4020,7 +4027,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 .card-header{
 	padding:.75rem 1.25rem;
 	margin-bottom:0;
-	background-color:rgba(0,0,0,0.03);
+	background-color:white;
 	border-bottom:1px solid rgba(0,0,0,0.125)
 }
 .card-header:first-child{
@@ -7039,9 +7046,11 @@ html{
 body{
 	font-family:"Work Sans", sans-serif !important
 }
+/*
 h1,h2,h3,h4,h5,h6{
 	font-family:"Roboto Mono", monospace !important
 }
+*/
 .navbar{
 	position:absolute !important;
 	width:100%;
