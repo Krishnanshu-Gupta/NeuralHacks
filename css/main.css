@@ -952,7 +952,39 @@ body {
       background-color: #ef60a3;
       transition: all 0.2s ease-in-out; }
       .schedule-section .schedule-mobile #day-selector #active-day-marker.day2 {
-        left: 50%; }
+		left: 50%; }
+
+	.schedule-section .schedule-mobile #day-selector #active-day-marker3 {
+      width: 50%;
+      height: 10%;
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      background-color: #ef60a3;
+      transition: all 0.2s ease-in-out; }
+		.schedule-section .schedule-mobile #day-selector #active-day-marker3.day4 {
+		left: 50%; }
+
+	.schedule-section .schedule-mobile #day-selector #active-day-marker5 {
+      width: 50%;
+      height: 10%;
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      background-color: #ef60a3;
+      transition: all 0.2s ease-in-out; }
+		.schedule-section .schedule-mobile #day-selector #active-day-marker5.day6 {
+		left: 50%; }
+	.schedule-section .schedule-mobile #day-selector #active-day-marker7 {
+      width: 50%;
+      height: 10%;
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      background-color: #ef60a3;
+      transition: all 0.2s ease-in-out; }
+		.schedule-section .schedule-mobile #day-selector #active-day-marker7.day8 {
+		left: 50%; }
   .schedule-section .schedule-mobile #day-panes {
     position: relative; }
     .schedule-section .schedule-mobile #day-panes .calday {
