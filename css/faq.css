@@ -239,7 +239,8 @@ footer {
       font-size: 1.333rem; }
   @media (max-width: 576px) {
     footer .links-group {
-      margin-top: 2rem; } }
+      margin-top: 2rem; 
+    margin-right: 20%} }
   footer .links-group ul {
     list-style: none;
     padding: 0; }
