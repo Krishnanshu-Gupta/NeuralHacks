@@ -373,7 +373,7 @@ footer {
     padding: 0 0 3rem 0; }
     @media (min-width: 576px) {
       .faq-container .faq-question {
-        width: 35vw; } }
+        width: 90vw; } }
     .faq-container .faq-question h5 {
       color: #2b39bf;
       font-family: "DM Sans", sans-serif;
