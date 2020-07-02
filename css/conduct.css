@@ -309,7 +309,8 @@ footer {
     footer .logo-group .footer-socials {
       color: #666666;
       font-weight: 400;
-      font-size: 0.75rem; }
+      font-size: 0.75rem; 
+    margin-left: 7px;}
     footer .logo-group .footer-flair-text {
       margin-top: 0.5rem; }
     footer .logo-group .footer-socials {
@@ -320,7 +321,8 @@ footer {
       font-size: 1.333rem; }
   @media (max-width: 576px) {
     footer .links-group {
-      margin-top: 2rem; } }
+      margin-top: 2rem; 
+    margin-right: 20%} }
   footer .links-group ul {
     list-style: none;
     padding: 0; }
