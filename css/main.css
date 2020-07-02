@@ -218,7 +218,7 @@ body {
   from { width: 0 }
   to { width: 100% }
 }
-
+ 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -1082,23 +1082,6 @@ body {
     .join-section .join-header {
       margin-top: 5rem; } }
 
-@media (min-width: 768px) {
-  .join-section .card {
-    width: 40vw; } }
-
-.join-section .card .join-btn {
-  display: block;
-  width: fit-content;
-  padding: 1rem 1.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "DM Sans", sans-serif;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  color: white;
-  background: #ef60a3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
-
 .join-section .card-group {
   display: flex;
   flex-direction: column;
@@ -1340,6 +1323,7 @@ body {
   flex-direction: column;
   position: relative;
   min-width: 150px;
+  max-width: 500px;
   padding: 1.5rem;
   margin: 1.3rem 0.5rem;
   background-color: white;
@@ -1357,8 +1341,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center; 
+  margin-left: auto;
+  margin-right: auto;
  background-color: transparent;}
   .card-header div {
     width: 66px;
@@ -1370,6 +1354,25 @@ body {
 	border: 1px solid #ced4da;
 	border-radius:.25rem
 }
+
+.card .join-btn {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: white;
+  background: #ef60a3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
+
+
 .input-group-text input[type="radio"],.input-group-text input[type="checkbox"]{
 	margin-top:0
 }
@@ -4058,10 +4061,10 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 	margin-left:1.25rem
 }
 .card-header{
-	padding:.75rem 1.25rem;
-	margin-bottom:0;
+	
+	margin-bottom:0.75rem;
 	background-color:white;
-	border-bottom:1px solid rgba(0,0,0,0.125)
+	
 }
 .card-header:first-child{
 	border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0
