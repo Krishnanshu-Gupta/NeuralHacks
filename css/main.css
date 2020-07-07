@@ -462,7 +462,8 @@ body {
       margin: 0 2rem 4rem 2rem; } }
 
 .characters-section {
-  margin-top: 50px; }
+  margin-top: 50px; 
+}
   .characters-section h1 {
     color: #2b39bf;
     margin-left: 5rem;
@@ -505,7 +506,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 0rem 0rem;
+    padding: 0rem 2rem;
 	align-items: center; 
 	margin: 0;}
     .web-carousel .option:nth-child(1) rect, .mobile-carousel .option:nth-child(1) rect {
@@ -595,6 +596,7 @@ body {
 	height:7vh
 }
 .industries-section{
+	margin-top: 0;
 	background:#67c5e7
 }
 .industries-section .industries-title{
