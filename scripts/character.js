@@ -1,4 +1,4 @@
-const titles = ["LEADERS", "BUILDERS", "HACKERS", "INNOVATORS", "CREATORS"];
+const titles = ["", "", "", "", ""];
 const descriptions = [
   "",
   "",
@@ -7,6 +7,7 @@ const descriptions = [
   "",
 ];
 const colorGradient = ["#ffd884", "#8ee3e2", "#ffc2df", "#aeb6ff", "#feb9b2"];
+const shift = [0, 250, 500, 750, 1000]
 
 var rem = function (count) {
   var unit = $("html").css("font-size");
@@ -201,9 +202,8 @@ function loadWebCarousel() {
       triangleIcon.css({
         fill: colorGradient[index],
         stroke: colorGradient[index],
-        transition: "1.0s"
+        transition: "1.0s",
       });
-
       // update the card's background color
       cardContent.css({
         "background-color": colorGradient[index],
