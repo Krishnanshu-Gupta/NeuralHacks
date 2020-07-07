@@ -505,8 +505,9 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 0rem 2rem;
-    align-items: center; }
+    padding: 0rem 0rem;
+	align-items: center; 
+	margin: 0;}
     .web-carousel .option:nth-child(1) rect, .mobile-carousel .option:nth-child(1) rect {
       height: 8px;
       width: 9rem;
