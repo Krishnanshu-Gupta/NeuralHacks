@@ -1,13 +1,12 @@
-const titles = ["", "", "", "", ""];
+const titles = ["LEADERS", "BUILDERS", "HACKERS", "INNOVATORS", "CREATORS"];
 const descriptions = [
-  "",
-  "",
-  "",
-  "",
-  "",
+  "Bold and strong-willed, leaders have a clear direction and vision of what needs to be created and why it matters. Keeping the big picture in mind, they keep their team on track to reach high level goals while maintaining a welcoming and collaborative work environment.",
+  "Concretely thinking in multi-faceted ways, builders are methodical, hardworking, and dependable. They enjoy hands-on work and cautiously apply systematic methods and practices to move tangible solutions forward accordingly.",
+  "These individuals are fluent in logical thinking and problem solving skills. Hackers are persistent, patient, and have a passion for finding the root cause of issues. They are masters at crafting new tools and systems via a step-by-step logical process.",
+  "These curious and experimental thinkers are constantly deconstructing and rebuilding systems. Applying their strategic thinking to execute novel, refined solutions — innovators are always looking forward and finding opportunity.",
+  "Creators apply their mastery of aesthetics and design to push the limits of convention and creativity. Translating ideas and visions into tangible deliverables, they recharge through introspection and imagination to assess principles in transforming ideas into practical solutions."
 ];
 const colorGradient = ["#ffd884", "#8ee3e2", "#ffc2df", "#aeb6ff", "#feb9b2"];
-const shift = [0, 250, 500, 750, 1000]
 
 var rem = function (count) {
   var unit = $("html").css("font-size");
@@ -202,8 +201,9 @@ function loadWebCarousel() {
       triangleIcon.css({
         fill: colorGradient[index],
         stroke: colorGradient[index],
-        transition: "1.0s",
+        transition: "1.0s"
       });
+
       // update the card's background color
       cardContent.css({
         "background-color": colorGradient[index],
