@@ -1,160 +1,162 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <link rel="shortcut icon" type="image/png" href="favicon.ico" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062917-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         
-         function gtag() {
-           dataLayer.push(arguments);
-         }
-         gtag("js", new Date());
-         gtag("config", "UA-143062917-1");
-      </script>
-      <meta charset="UTF-8" />
-      <title>Neural Hacks</title>
-      <meta name="author" content="Neural Hacks" />
-      <meta name="description" content="Neural Hacks 2020" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="viewport" content="initial-scale=1.0" />
-      <meta property="og:url" content="https://neuralhacks.com" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Neural Hacks 2020" />
-      <meta property="og:description"
-         content="The World's Largest Student-Run AI Hackathon" />
-      <link href="css/main.css" rel="stylesheet" type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500%7CMontserrat:600,700,800,900&amp;display=swap"
-         rel="stylesheet" />
-      <!-- <link rel="stylesheet" href="static/css/style.css" /> -->
-      <link rel="preconnect" href="https://unpkg.com" />
-      <link rel="preconnect" href="https://kit.fontawesome.com" />
-      <link rel="preconnect" href="https://www.googletagmanager.com" />
-      <link rel="icon" type="image/png" href="static/img/favicon.ico.png" />
-      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css" />
-   </head>
-   <body>
-      <div class="color-border">
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-      </div>
-      <nav class="navBar">
-         
-            <a href="index.html" style="float:left;">
-               <img src="https://res.cloudinary.com/dkhbgw7il/image/upload/v1593470618/LogoMakr_0m5VL1_fvbehr.png">
-            </a>
-         
-         <ul class="navBarText desktop-only-flex" style="float:right;">
-            <li>
-               <a href="index.html">Home</a>
-            </li>
-            <li><a href="conduct.html">Code of Conduct</a></li>
-            <li><a href="#registration">Registration</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-         </ul>
-         <button id="mobile-nav-btn" class="mobile-only" style="float:right;">
+
+<head>
+   <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143062917-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-143062917-1");
+   </script>
+   <meta charset="UTF-8" />
+   <title>Neural Hacks</title>
+   <meta name="author" content="Neural Hacks" />
+   <meta name="description" content="Neural Hacks 2020" />
+   <meta name="viewport" content="width=device-width" />
+   <meta name="viewport" content="initial-scale=1.0" />
+   <meta property="og:url" content="https://neuralhacks.com" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="Neural Hacks 2020" />
+   <meta property="og:description" content="The World's Largest Student-Run AI Hackathon" />
+   <link href="css/main.css" rel="stylesheet" type="text/css" />
+   <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500%7CMontserrat:600,700,800,900&amp;display=swap"
+      rel="stylesheet" />
+   <!-- <link rel="stylesheet" href="static/css/style.css" /> -->
+   <link rel="preconnect" href="https://unpkg.com" />
+   <link rel="preconnect" href="https://kit.fontawesome.com" />
+   <link rel="preconnect" href="https://www.googletagmanager.com" />
+   <link rel="icon" type="image/png" href="static/img/favicon.ico.png" />
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css" />
+</head>
+
+<body>
+   <div class="color-border">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+   </div>
+   <nav class="navBar">
+
+      <a href="index.html" style="float:left;">
+         <img src="https://res.cloudinary.com/dkhbgw7il/image/upload/v1593470618/LogoMakr_0m5VL1_fvbehr.png">
+      </a>
+
+      <ul class="navBarText desktop-only-flex" style="float:right;">
+         <li>
+            <a href="index.html">Home</a>
+         </li>
+         <li><a href="conduct.html">Code of Conduct</a></li>
+         <li><a href="#registration">Registration</a></li>
+         <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <button id="mobile-nav-btn" class="mobile-only" style="float:right;">
          <img src="assets/menu.svg" />
-         </button>
-         <div class="mobile-menu">
-            <!-- <div class="mobile-menu-container"> -->
-            <div class="mobile-menu-background"></div>
-            <div class="mobile-menu-content">
-               <ul class="navBarText">
-                  <li>
-                     <a href="index.html">Home</a>
-                  </li>
-                  <li><a href="conduct.html">Code of Conduct</a></li>
-                  <li><a href="#registration">Registration</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-               </ul>
-               <button id="mobile-menu-close">close</button>
-            </div>
+      </button>
+      <div class="mobile-menu">
+         <!-- <div class="mobile-menu-container"> -->
+         <div class="mobile-menu-background"></div>
+         <div class="mobile-menu-content">
+            <ul class="navBarText">
+               <li>
+                  <a href="index.html">Home</a>
+               </li>
+               <li><a href="conduct.html">Code of Conduct</a></li>
+               <li><a href="#registration">Registration</a></li>
+               <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <button id="mobile-menu-close">close</button>
          </div>
-         <!-- </div> -->
-      </nav>
-      <section class="mainView">
-         <div class="mainview-text">
-            <div>
-               <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-               <!--
+      </div>
+      <!-- </div> -->
+   </nav>
+   <section class="mainView">
+      <div class="mainview-text">
+         <div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <!--
                   <div class="typewriter" id="myTypewriter">
                     <h1>The cat and the hat.</h1>
                   </div>
                   <h1>Your <div id="sequence"></div></h1>
                   -->
-               <h1>From our team to you,<br />Neural Hacks.</h1>
-               <p class="details">Aug 8-16, 2020 | Virtual</p>
-               <!-- <p>
+            <h1>From our team to you,<br />Neural Hacks.</h1>
+            <p class="details">Aug 8-16, 2020 | Virtual</p>
+            <!-- <p>
                   Confirm your spot by Friday, September 27th at 11:59PM PST!
                   </p> -->
-            </div>
-            <a href="https://outreachneuralhacks.typeform.com/to/Xxv0FhlX" target="_blank"> <!--Add google form link when goven-->
+         </div>
+         <a href="https://outreachneuralhacks.typeform.com/to/Xxv0FhlX" target="_blank">
+            <!--Add google form link when goven-->
             <button type="button">
-            Registration
+               Registration
             </button>
-            </a>
+         </a>
+      </div>
+      <img src="assets/Landing_Page_New.png" />
+   </section>
+   <section class="info-section">
+      <div class="info-header">
+         <div class="info-view-text">
+            <h2>What is Neural Hacks?</h2>
+            <p>
+               Neural Hacks is the largest student-run AI hackathon in the world.
+               We want to make it easy for anyone to dream big and to advocate for the importance
+               of diversity, inclusion, accessibility, and representation in technology, we created a platform where
+               individuals of all backgrounds come together to develop solutions
+               that solve society’s biggest issues. So, what are you waiting for?
+               Join us to create <strong>#YourNeuralHacks</strong>.
+            </p>
          </div>
-         <img src="assets/Landing_Page_New.png" />
-      </section>
-      <section class="info-section">
-         <div class="info-header">
-            <div class="info-view-text">
-               <h2>What is Neural Hacks?</h2>
-               <p>
-                  Neural Hacks is the largest student-run AI hackathon in the world.
-                  We want to make it easy for anyone to dream big and to advocate for the importance 
-                  of diversity, inclusion, accessibility, and representation in technology, we created a platform where
-                  individuals of all backgrounds come together to develop solutions
-                  that solve society’s biggest issues. So, what are you waiting for?
-                  Join us to create <strong>#YourNeuralHacks</strong>.
-               </p>
+      </div>
+      <div class="card-group">
+         <div class="card">
+            <div class="card-header">
+               <h3>CONNECT</h3>
+               <div>
+                  <img src="assets/connect.png" />
+               </div>
             </div>
+            <p class="card-description">
+               We <strong>connect</strong> technology with humanity.
+            </p>
          </div>
-         <div class="card-group">
-            <div class="card">
-               <div class="card-header">
-                  <h3>CONNECT</h3>
-                  <div>
-                     <img src="assets/connect.png" />
-                  </div>
+         <div class="card">
+            <div class="card-header">
+               <h3>EMPOWER</h3>
+               <div>
+                  <img src="assets/empower.png" />
                </div>
-               <p class="card-description">
-                  We <strong>connect</strong> technology with humanity.
-               </p>
             </div>
-            <div class="card">
-               <div class="card-header">
-                  <h3>EMPOWER</h3>
-                  <div>
-                     <img src="assets/empower.png" />
-                  </div>
-               </div>
-               <p class="card-description">
-                  We <strong>empower</strong> students to innovate within their
-                  communities.
-               </p>
-            </div>
-            <div class="card">
-               <div class="card-header">
-                  <h3>CREATE</h3>
-                  <div>
-                     <img src="assets/create.png" />
-                  </div>
-               </div>
-               <p class="card-description">
-                  Together, we <strong>create</strong> solutions that are diverse,
-                  inclusive, and accessible.
-               </p>
-            </div>
+            <p class="card-description">
+               We <strong>empower</strong> students to innovate within their
+               communities.
+            </p>
          </div>
-      </section>
-      <section class="characters-section">
-         <h1>The Neural Hacks Community</h1>
-         <!-- <p id="description">
+         <div class="card">
+            <div class="card-header">
+               <h3>CREATE</h3>
+               <div>
+                  <img src="assets/create.png" />
+               </div>
+            </div>
+            <p class="card-description">
+               Together, we <strong>create</strong> solutions that are diverse,
+               inclusive, and accessible.
+            </p>
+         </div>
+      </div>
+   </section>
+   <section class="characters-section">
+      <h1>The Neural Hacks Community</h1>
+      <!-- <p id="description">
             NeuralHacks prioritizes bringing together individuals from a diverse range
             of backgrounds and experiences. Despite our differences, our community
             is connected and united by common characteristics, values, and a passion
@@ -167,47 +169,47 @@
             Everything you need to create something revolutionary
             We want to inspire students to discover the world around them by empowering them to learn and create by providing an environment for them to explore and build with workshops, mentorship, and speakers.
          </p> -->
-         <p id="description">
-            NeuralHacks prioritizes bringing together a global community of people to raise 
-            interest in the field of Artificial Intelligence. With the expansion of Computer 
-            Science in the world in every single aspect, AI stands out for its possibilities 
-            and shaping the future of computer science. We bring this hackathon as a platform for 
-            the next big minds to give us a glimpse into what true creativity is with their masterpieces. 
-            We believe that no one should shape the future alone. We want to show that working with others 
-            is critical to success, and collaboration is a stepping stone to innovation. Inspire everyone.
-         </p>
-         
-         <div class="characters-view disable-scrollbars">
-            <div class="web-carousel" id="characters-carousel">
-               <div class="option active" id="leader">
-                  <img src="assets/Leader.png" />
-                  <rect></rect>
-                  <p>LEADERS</p>
-               </div>
-               <div class="option inactive" id="builder">
-                  <img src="assets/Builders.png" />
-                  <rect></rect>
-                  <p>BUILDERS</p>
-               </div>
-               <div class="option inactive" id="hacker">
-                  <img src="assets/Hackers.png" />
-                  <rect></rect>
-                  <p>HACKERS</p>
-               </div>
-               <div class="option inactive" id="innovator">
-                  <img src="assets/Innovators.png" />
-                  <rect></rect>
-                  <p>INNOVATORS</p>
-               </div>
-               <div class="option inactive" id="creator">
-                  <img src="assets/Creators.png" />
-                  <rect></rect>
-                  <p>CREATORS</p>
-               </div>
+      <p id="description">
+         NeuralHacks prioritizes bringing together a global community of people to raise
+         interest in the field of Artificial Intelligence. With the expansion of Computer
+         Science in the world in every single aspect, AI stands out for its possibilities
+         and shaping the future of computer science. We bring this hackathon as a platform for
+         the next big minds to give us a glimpse into what true creativity is with their masterpieces.
+         We believe that no one should shape the future alone. We want to show that working with others
+         is critical to success, and collaboration is a stepping stone to innovation. Inspire everyone.
+      </p>
+
+      <div class="characters-view disable-scrollbars">
+         <div class="web-carousel" id="characters-carousel">
+            <div class="option active" id="leader">
+               <img src="assets/Leader.png" />
+               <rect></rect>
+               <p>LEADERS</p>
+            </div>
+            <div class="option inactive" id="builder">
+               <img src="assets/Builders.png" />
+               <rect></rect>
+               <p>BUILDERS</p>
+            </div>
+            <div class="option inactive" id="hacker">
+               <img src="assets/Hackers.png" />
+               <rect></rect>
+               <p>HACKERS</p>
+            </div>
+            <div class="option inactive" id="innovator">
+               <img src="assets/Innovators.png" />
+               <rect></rect>
+               <p>INNOVATORS</p>
+            </div>
+            <div class="option inactive" id="creator">
+               <img src="assets/Creators.png" />
+               <rect></rect>
+               <p>CREATORS</p>
             </div>
          </div>
-      </section>
-      <!--
+      </div>
+   </section>
+   <!--
       <section class="characters-mobile-section">
          <h1>The NeuralHacks Community</h1>
          <p id="description">
@@ -320,495 +322,636 @@
              </div>
            </div>
          </section> -->
-         <br><br>
-         <br>
-      <div class="about-transition"></div>
-      <div class="section industries-section">
-         <div class="container">
-            <h1 class="section-title industries-title">
-               Industries
-            </h1>
+   <br><br>
+   <br>
+   <div class="about-transition"></div>
+   <div class="section industries-section">
+      <div class="container">
+         <h1 class="section-title industries-title">
+            Industries
+         </h1>
+      </div>
+      <div class="slider">
+         <div class="slide-track">
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology"
+                     src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+               </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-energy"
+                     src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+               </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-consulting"
+                     src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance"
+                     src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+               </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-transportation"
+                     src="static/img/icons/transportation.svg" industry-title="Transportation"
+                     data-tippy-placement="bottom" />
+               </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-education"
+                     src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports"
+                     src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+               </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare"
+                     src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+               </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace"
+                     src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance"
+                     src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+               </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-retail"
+                     src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+               </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy"
+                     src="static/img/icons/publicpolicy.svg" industry-title="Public Policy"
+                     data-tippy-placement="top" />
+               </div>
+            </div>
          </div>
-         <div class="slider">
-            <div class="slide-track">
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-                  </div>
+         <div class="slide-track">
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology"
+                     src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
                </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-                  </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-energy"
+                     src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
                </div>
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-                  </div>
-               </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-                  </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-consulting"
+                     src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
                </div>
             </div>
-            <div class="slide-track">
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-                  </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance"
+                     src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
                </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-                  </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-transportation"
+                     src="static/img/icons/transportation.svg" industry-title="Transportation"
+                     data-tippy-placement="bottom" />
                </div>
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-                  </div>
-               </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-                  </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-education"
+                     src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
                </div>
             </div>
-            <div class="slide-track">
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-                  </div>
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports"
+                     src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
                </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-                  </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare"
+                     src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
                </div>
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-                  </div>
-               </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-                  </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace"
+                     src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
                </div>
             </div>
-            <div class="slide-track">
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology" src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-energy" src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-consulting" src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
-                  </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance"
+                     src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
                </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance" src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-transportation" src="static/img/icons/transportation.svg" industry-title="Transportation" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-education" src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
-                  </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-retail"
+                     src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
                </div>
-               <div class="slide">
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports" src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
-                  </div>
-                  <div class="down bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare" src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="up">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace" src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
-                  </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy"
+                     src="static/img/icons/publicpolicy.svg" industry-title="Public Policy"
+                     data-tippy-placement="top" />
                </div>
-               <div class="slide">
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance" src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
-                  </div>
-                  <div class="up bottom-left">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-retail" src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
-                  </div>
-                  <div class="down">
-                     <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy" src="static/img/icons/publicpolicy.svg" industry-title="Public Policy" data-tippy-placement="top" />
-                  </div>
+            </div>
+         </div>
+         <div class="slide-track">
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology"
+                     src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+               </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-energy"
+                     src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+               </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-consulting"
+                     src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance"
+                     src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+               </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-transportation"
+                     src="static/img/icons/transportation.svg" industry-title="Transportation"
+                     data-tippy-placement="bottom" />
+               </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-education"
+                     src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports"
+                     src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+               </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare"
+                     src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+               </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace"
+                     src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance"
+                     src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+               </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-retail"
+                     src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+               </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy"
+                     src="static/img/icons/publicpolicy.svg" industry-title="Public Policy"
+                     data-tippy-placement="top" />
+               </div>
+            </div>
+         </div>
+         <div class="slide-track">
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-technology"
+                     src="static/img/icons/technology.svg" industry-title="Technology" data-tippy-placement="top" />
+               </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-energy"
+                     src="static/img/icons/energy.svg" industry-title="Energy" data-tippy-placement="bottom" />
+               </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-consulting"
+                     src="static/img/icons/consulting.svg" industry-title="Consulting" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-finance"
+                     src="static/img/icons/finance.svg" industry-title="Finance" data-tippy-placement="top" />
+               </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-transportation"
+                     src="static/img/icons/transportation.svg" industry-title="Transportation"
+                     data-tippy-placement="bottom" />
+               </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-education"
+                     src="static/img/icons/education.svg" industry-title="Education" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-sports"
+                     src="static/img/icons/sports.svg" industry-title="Sports" data-tippy-placement="top" />
+               </div>
+               <div class="down bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-healthcare"
+                     src="static/img/icons/healthcare.svg" industry-title="Healthcare" data-tippy-placement="bottom" />
+               </div>
+               <div class="up">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-aerospace"
+                     src="static/img/icons/aerospace.svg" industry-title="Aerospace" data-tippy-placement="top" />
+               </div>
+            </div>
+            <div class="slide">
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger top-left" industry-id="industry-insurance"
+                     src="static/img/icons/insurance.svg" industry-title="Insurance" data-tippy-placement="top" />
+               </div>
+               <div class="up bottom-left">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-retail"
+                     src="static/img/icons/retail.svg" industry-title="Retail" data-tippy-placement="bottom" />
+               </div>
+               <div class="down">
+                  <img class="slider-image industry-modal-trigger" industry-id="industry-publicpolicy"
+                     src="static/img/icons/publicpolicy.svg" industry-title="Public Policy"
+                     data-tippy-placement="top" />
                </div>
             </div>
          </div>
       </div>
-      <div class="modal fade" id="industry-modal">
-         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title">Industries</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+   </div>
+   <div class="modal fade" id="industry-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Industries</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body industry-modal-body">
-                  <div class="row align-items-stretch">
-                     <div class="col-lg-3 col-md-12 modal-col">
-                        <div class="nav nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
-                           <a class="nav-link industry-modal-nav-link" id="industry-technology-tab" data-toggle="pill" href="#industry-technology" role="tab" aria-controls="industry-technology" aria-selected="true">
+               </button>
+            </div>
+            <div class="modal-body industry-modal-body">
+               <div class="row align-items-stretch">
+                  <div class="col-lg-3 col-md-12 modal-col">
+                     <div class="nav nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link industry-modal-nav-link" id="industry-technology-tab" data-toggle="pill"
+                           href="#industry-technology" role="tab" aria-controls="industry-technology"
+                           aria-selected="true">
                            Technology
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-energy-tab" data-toggle="pill" href="#industry-energy" role="tab" aria-controls="industry-energy" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-energy-tab" data-toggle="pill"
+                           href="#industry-energy" role="tab" aria-controls="industry-energy" aria-selected="true">
                            Energy
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-consulting-tab" data-toggle="pill" href="#industry-consulting" role="tab" aria-controls="industry-consulting" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-consulting-tab" data-toggle="pill"
+                           href="#industry-consulting" role="tab" aria-controls="industry-consulting"
+                           aria-selected="true">
                            Consulting
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-finance-tab" data-toggle="pill" href="#industry-finance" role="tab" aria-controls="industry-finance" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-finance-tab" data-toggle="pill"
+                           href="#industry-finance" role="tab" aria-controls="industry-finance" aria-selected="true">
                            Finance
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-transportation-tab" data-toggle="pill" href="#industry-transportation" role="tab" aria-controls="industry-transportation" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-transportation-tab" data-toggle="pill"
+                           href="#industry-transportation" role="tab" aria-controls="industry-transportation"
+                           aria-selected="true">
                            Transportation
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-education-tab" data-toggle="pill" href="#industry-education" role="tab" aria-controls="industry-education" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-education-tab" data-toggle="pill"
+                           href="#industry-education" role="tab" aria-controls="industry-education"
+                           aria-selected="true">
                            Education
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-sports-tab" data-toggle="pill" href="#industry-sports" role="tab" aria-controls="industry-sports" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-sports-tab" data-toggle="pill"
+                           href="#industry-sports" role="tab" aria-controls="industry-sports" aria-selected="true">
                            Sports
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-healthcare-tab" data-toggle="pill" href="#industry-healthcare" role="tab" aria-controls="industry-healthcare" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-healthcare-tab" data-toggle="pill"
+                           href="#industry-healthcare" role="tab" aria-controls="industry-healthcare"
+                           aria-selected="true">
                            Healthcare
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-aerospace-tab" data-toggle="pill" href="#industry-aerospace" role="tab" aria-controls="industry-aerospace" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-aerospace-tab" data-toggle="pill"
+                           href="#industry-aerospace" role="tab" aria-controls="industry-aerospace"
+                           aria-selected="true">
                            Aerospace
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-insurance-tab" data-toggle="pill" href="#industry-insurance" role="tab" aria-controls="industry-insurance" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-insurance-tab" data-toggle="pill"
+                           href="#industry-insurance" role="tab" aria-controls="industry-insurance"
+                           aria-selected="true">
                            Insurance
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-retail-tab" data-toggle="pill" href="#industry-retail" role="tab" aria-controls="industry-retail" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-retail-tab" data-toggle="pill"
+                           href="#industry-retail" role="tab" aria-controls="industry-retail" aria-selected="true">
                            Retail
-                           </a>
-                           <a class="nav-link industry-modal-nav-link" id="industry-publicpolicy-tab" data-toggle="pill" href="#industry-publicpolicy" role="tab" aria-controls="industry-publicpolicy" aria-selected="true">
+                        </a>
+                        <a class="nav-link industry-modal-nav-link" id="industry-publicpolicy-tab" data-toggle="pill"
+                           href="#industry-publicpolicy" role="tab" aria-controls="industry-publicpolicy"
+                           aria-selected="true">
                            Public Policy
-                           </a>
-                        </div>
+                        </a>
                      </div>
-                     <div class="col-lg-9 col-md-12 modal-col">
-                        <div class="tab-content" id="industry-tab-content">
-                           <div class="tab-pane fade industry-modal-content" id="industry-technology" role="tabpanel" aria-labelledby="industry-technology-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/technology.svg" alt="Technology" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Can you determine sentiment from a tweet, predict a Facebook check-in, or generate appropriate tags for a YouTube video?</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                       <li><a href="https://www.kaggle.com/c/tweet-sentiment-extraction" target="_blank">Tweet Sentiments</a></li>
-                                       <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins" target="_blank">Check-In Prediction</a></li>
-                                       <li><a href="https://www.kaggle.com/c/youtube8m" target="_blank">Tag Prediction</a></li>
-                                       <ul>
-                                       </p>
-                                    </div>
-                                 </div>
+                  </div>
+                  <div class="col-lg-9 col-md-12 modal-col">
+                     <div class="tab-content" id="industry-tab-content">
+                        <div class="tab-pane fade industry-modal-content" id="industry-technology" role="tabpanel"
+                           aria-labelledby="industry-technology-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/technology.svg"
+                                    alt="Technology" />
                               </div>
-                              
-                           </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-energy" role="tabpanel" aria-labelledby="industry-energy-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/energy.svg" alt="Energy" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Model a building’s energy consumption, gas prices, or oil accidents!</p>
-                                       <h6>Kaggle Competitions:</h6>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Can you determine sentiment from a tweet, predict a Facebook check-in, or
+                                       generate appropriate tags for a YouTube video?</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/tweet-sentiment-extraction"
+                                             target="_blank">Tweet Sentiments</a></li>
+                                       <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins"
+                                             target="_blank">Check-In Prediction</a></li>
+                                       <li><a href="https://www.kaggle.com/c/youtube8m" target="_blank">Tag
+                                             Prediction</a></li>
                                        <ul>
-                                          <li><a href="https://www.kaggle.com/c/ashrae-energy-prediction" target="_blank">Energy Prediction</a></li>
-                                          <li><a href="https://www.kaggle.com/mabusalah/brent-oil-prices" target="_blank">Oil Prices</a> </li>
-                                          <li><a href="https://www.kaggle.com/usdot/pipeline-accidents" target="_blank">Pipeline Accidents</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              
-                           </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-consulting" role="tabpanel" aria-labelledby="industry-consulting-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/consulting.svg" alt="Consulting" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Predict property rental prices or find the most accurate system to predict chess outcomes!</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/deloitte-western-australia-rental-prices" target="_blank">Rental Prices</a></li>
-                                          <li><a href="https://www.kaggle.com/c/ChessRatings2" target="_blank">Chess Outcomes</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              
-                           </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-finance" role="tabpanel" aria-labelledby="industry-finance-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/finance.svg" alt="Finance" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Can you predict end of day stock returns given noisy data?</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/two-sigma-financial-modeling" target="_blank">Two Sigma</a></li>
-                                          <li><a href="https://www.kaggle.com/c/the-winton-stock-market-challenge" target="_blank">Winton Stock Returns</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              
-                           </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-transportation" role="tabpanel" aria-labelledby="industry-transportation-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/transportation.svg" alt="Transportation" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Try to identify distracted drivers, work with self-driving cars, or reduce vehicle manufacturing time.</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection" target="_blank">Distraction Detection</a></li>
-                                          <li><a href="https://www.kaggle.com/c/carvana-image-masking-challenge" target="_blank">Vehicle Recognition</a></li>
-                                          <li><a href="https://www.kaggle.com/c/mercedes-benz-greener-manufacturing" target="_blank">Optimize Manufacturing</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              
-                           </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-education" role="tabpanel" aria-labelledby="industry-education-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/education.svg" alt="Education" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Compare different countries' educational systems, identify college debt trends, or discover which majors & universities have the best ROI! </p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/theworldbank/education-statistics" target="_blank">Education Statistics</a></li>
-                                          <li><a href="https://www.kaggle.com/kaggle/college-scorecard" target="_blank">College Debt</a></li>
-                                          <li><a href="https://www.kaggle.com/wsj/college-salaries" target="_blank">College Salaries</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              
-                           </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-sports" role="tabpanel" aria-labelledby="industry-sports-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/sports.svg" alt="Sports" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Be a true MVP and predict football yardage, injuries, or suggest rule changes to improve safety!</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/nfl-big-data-bowl-2020" target="_blank">NFL Yardage Prediction</a></li>
-                                          <li><a href="https://www.kaggle.com/c/NFL-Punt-Analytics-Competition" target="_blank">NFL Punt Analysis</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
+                                          </p>
                                  </div>
                               </div>
                            </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-healthcare" role="tabpanel" aria-labelledby="industry-healthcare-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/healthcare.svg" alt="Healthcare" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Detect diabetic retinopathy to stop blindness or take a stab at modeling COVID-19!</p>
-                                        <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/aptos2019-blindness-detection" target="_blank">Blindness Detection</a></li>
-                                          <li><a href="https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">Coronavirus Dataset</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-energy" role="tabpanel"
+                           aria-labelledby="industry-energy-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/energy.svg"
+                                    alt="Energy" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Model a building’s energy consumption, gas prices, or oil accidents!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/ashrae-energy-prediction"
+                                             target="_blank">Energy Prediction</a></li>
+                                       <li><a href="https://www.kaggle.com/mabusalah/brent-oil-prices"
+                                             target="_blank">Oil Prices</a> </li>
+                                       <li><a href="https://www.kaggle.com/usdot/pipeline-accidents"
+                                             target="_blank">Pipeline Accidents</a></li>
+                                    </ul>
+                                    </p>
                                  </div>
                               </div>
                            </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-aerospace" role="tabpanel" aria-labelledby="industry-aerospace-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/aerospace.svg" alt="Aerospace" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Predict flight delays, space shuttle part failure, airplane crashes, and so much more!</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/fabiendaniel/predicting-flight-delays-tutorial" target="_blank">Flight Delays</a></li>
-                                          <li><a href="https://www.kaggle.com/c/dat31-shuttle/notebooks" target="_blank">Shuttle Disaster</a></li>
-                                          <li><a href="https://www.kaggle.com/c/reducing-commercial-aviation-fatalities" target="_blank">Aviation Fatalities</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-consulting" role="tabpanel"
+                           aria-labelledby="industry-consulting-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/consulting.svg"
+                                    alt="Consulting" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Predict property rental prices or find the most accurate system to predict chess
+                                       outcomes!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/deloitte-western-australia-rental-prices"
+                                             target="_blank">Rental Prices</a></li>
+                                       <li><a href="https://www.kaggle.com/c/ChessRatings2" target="_blank">Chess
+                                             Outcomes</a></li>
+                                    </ul>
+                                    </p>
                                  </div>
                               </div>
                            </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-insurance" role="tabpanel" aria-labelledby="industry-insurance-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/insurance.svg" alt="Insurance" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Find the right pricing for an insurance plan, predict customer retention, and classify risk!</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/ClaimPredictionChallenge" target="_blank">Claim Prediction</a></li>
-                                          <li><a href="https://www.kaggle.com/c/deloitte-churn-prediction" target="_blank">Customer Loyalty</a></li>
-                                          <li><a href="https://www.kaggle.com/c/prudential-life-insurance-assessment" target="_blank">Risk Assessment</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-finance" role="tabpanel"
+                           aria-labelledby="industry-finance-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/finance.svg"
+                                    alt="Finance" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Can you predict end of day stock returns given noisy data?</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/two-sigma-financial-modeling"
+                                             target="_blank">Two Sigma</a></li>
+                                       <li><a href="https://www.kaggle.com/c/the-winton-stock-market-challenge"
+                                             target="_blank">Winton Stock Returns</a></li>
+                                    </ul>
+                                    </p>
                                  </div>
                               </div>
                            </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-retail" role="tabpanel" aria-labelledby="industry-retail-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/retail.svg" alt="Retail" />
-                                 </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Build product recommendation engines, detect fraud, personalize marketing, manage inventory, and more!</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/c/santander-product-recommendation" target="_blank">Product Recommendation</a></li>
-                                          <li><a href="https://www.kaggle.com/c/ieee-fraud-detection" target="_blank">Fraud Detection</a></li>
-                                          <li><a href="https://www.kaggle.com/c/instacart-market-basket-analysis" target="_blank">Market Analysis</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-transportation" role="tabpanel"
+                           aria-labelledby="industry-transportation-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/transportation.svg"
+                                    alt="Transportation" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Try to identify distracted drivers, work with self-driving cars, or reduce
+                                       vehicle manufacturing time.</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection"
+                                             target="_blank">Distraction Detection</a></li>
+                                       <li><a href="https://www.kaggle.com/c/carvana-image-masking-challenge"
+                                             target="_blank">Vehicle Recognition</a></li>
+                                       <li><a href="https://www.kaggle.com/c/mercedes-benz-greener-manufacturing"
+                                             target="_blank">Optimize Manufacturing</a></li>
+                                    </ul>
+                                    </p>
                                  </div>
                               </div>
-                              
                            </div>
-                           <div class="tab-pane fade industry-modal-content" id="industry-publicpolicy" role="tabpanel" aria-labelledby="industry-publicpolicy-tab">
-                              <div class="row align-items-center justify-content-center">
-                                 <div class="col-md-12 text-center py-3 bg-gradient">
-                                    <img class="industry-modal-content-img" src="static/img/icons/publicpolicy.svg" alt="Public Policy" />
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-education" role="tabpanel"
+                           aria-labelledby="industry-education-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/education.svg"
+                                    alt="Education" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Compare different countries' educational systems, identify college debt trends,
+                                       or discover which majors & universities have the best ROI! </p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/theworldbank/education-statistics"
+                                             target="_blank">Education Statistics</a></li>
+                                       <li><a href="https://www.kaggle.com/kaggle/college-scorecard"
+                                             target="_blank">College Debt</a></li>
+                                       <li><a href="https://www.kaggle.com/wsj/college-salaries" target="_blank">College
+                                             Salaries</a></li>
+                                    </ul>
+                                    </p>
                                  </div>
-                                 <div class="col py-3">
-                                    <div class="industry-modal-content-text">
-                                       <p class="industry-description">
-                                       <p>Investigate crime and law enforcement, the presidential election, or the census data!</p>
-                                       <h6>Kaggle Competitions:</h6>
-                                       <ul>
-                                          <li><a href="https://www.kaggle.com/benhamner/2016-us-election" target="_blank">US Election Data</a></li>
-                                          <li><a href="https://www.kaggle.com/fbi-us/california-crime" target="_blank">Crime Statistics</a></li>
-                                          <li><a href="https://www.kaggle.com/c/us-census-challenge" target="_blank">US Census</a></li>
-                                       </ul>
-                                       </p>
-                                    </div>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-sports" role="tabpanel"
+                           aria-labelledby="industry-sports-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/sports.svg"
+                                    alt="Sports" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Be a true MVP and predict football yardage, injuries, or suggest rule changes to
+                                       improve safety!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/nfl-big-data-bowl-2020" target="_blank">NFL
+                                             Yardage Prediction</a></li>
+                                       <li><a href="https://www.kaggle.com/c/NFL-Punt-Analytics-Competition"
+                                             target="_blank">NFL Punt Analysis</a></li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-healthcare" role="tabpanel"
+                           aria-labelledby="industry-healthcare-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/healthcare.svg"
+                                    alt="Healthcare" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Detect diabetic retinopathy to stop blindness or take a stab at modeling
+                                       COVID-19!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/aptos2019-blindness-detection"
+                                             target="_blank">Blindness Detection</a></li>
+                                       <li><a href="https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset"
+                                             target="_blank">Coronavirus Dataset</a></li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-aerospace" role="tabpanel"
+                           aria-labelledby="industry-aerospace-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/aerospace.svg"
+                                    alt="Aerospace" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Predict flight delays, space shuttle part failure, airplane crashes, and so much
+                                       more!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/fabiendaniel/predicting-flight-delays-tutorial"
+                                             target="_blank">Flight Delays</a></li>
+                                       <li><a href="https://www.kaggle.com/c/dat31-shuttle/notebooks"
+                                             target="_blank">Shuttle Disaster</a></li>
+                                       <li><a href="https://www.kaggle.com/c/reducing-commercial-aviation-fatalities"
+                                             target="_blank">Aviation Fatalities</a></li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-insurance" role="tabpanel"
+                           aria-labelledby="industry-insurance-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/insurance.svg"
+                                    alt="Insurance" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Find the right pricing for an insurance plan, predict customer retention, and
+                                       classify risk!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/ClaimPredictionChallenge"
+                                             target="_blank">Claim Prediction</a></li>
+                                       <li><a href="https://www.kaggle.com/c/deloitte-churn-prediction"
+                                             target="_blank">Customer Loyalty</a></li>
+                                       <li><a href="https://www.kaggle.com/c/prudential-life-insurance-assessment"
+                                             target="_blank">Risk Assessment</a></li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-retail" role="tabpanel"
+                           aria-labelledby="industry-retail-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/retail.svg"
+                                    alt="Retail" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Build product recommendation engines, detect fraud, personalize marketing, manage
+                                       inventory, and more!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/c/santander-product-recommendation"
+                                             target="_blank">Product Recommendation</a></li>
+                                       <li><a href="https://www.kaggle.com/c/ieee-fraud-detection" target="_blank">Fraud
+                                             Detection</a></li>
+                                       <li><a href="https://www.kaggle.com/c/instacart-market-basket-analysis"
+                                             target="_blank">Market Analysis</a></li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="tab-pane fade industry-modal-content" id="industry-publicpolicy" role="tabpanel"
+                           aria-labelledby="industry-publicpolicy-tab">
+                           <div class="row align-items-center justify-content-center">
+                              <div class="col-md-12 text-center py-3 bg-gradient">
+                                 <img class="industry-modal-content-img" src="static/img/icons/publicpolicy.svg"
+                                    alt="Public Policy" />
+                              </div>
+                              <div class="col py-3">
+                                 <div class="industry-modal-content-text">
+                                    <p class="industry-description">
+                                    <p>Investigate crime and law enforcement, the presidential election, or the census
+                                       data!</p>
+                                    <h6>Kaggle Competitions:</h6>
+                                    <ul>
+                                       <li><a href="https://www.kaggle.com/benhamner/2016-us-election"
+                                             target="_blank">US Election Data</a></li>
+                                       <li><a href="https://www.kaggle.com/fbi-us/california-crime"
+                                             target="_blank">Crime Statistics</a></li>
+                                       <li><a href="https://www.kaggle.com/c/us-census-challenge" target="_blank">US
+                                             Census</a></li>
+                                    </ul>
+                                    </p>
                                  </div>
                               </div>
                            </div>
@@ -819,234 +962,239 @@
             </div>
          </div>
       </div>
-      <div class="industries-transition"></div>
-      <section class="schedule-section">
-         <div class="schedule-desktop">
-            <div class="left-pane pane">
-               <div class="calday">
-                  <h3>Day 1</h3>
-                  <p class="date">Saturday, August 8</p>
-                  <div class="events-container">
-                     <!-- <div class="event">
+   </div>
+   <div class="industries-transition"></div>
+   <section class="schedule-section">
+      <div class="schedule-desktop">
+         <div class="left-pane pane">
+            <div class="calday">
+               <h3>Day 1</h3>
+               <p class="date">Saturday, August 8</p>
+               <div class="events-container">
+                  <!-- <div class="event">
                         <span class="event-name">Registration</span>
                         <span class="event-time">11:30 AM</span>
                      </div> -->
-                  </div>
-               </div>
-            </div>
-            <div class="right-pane pane">
-               <h2>What's Going Down</h2>
-               <div class="calday">
-                  <h3>Day 2</h3>
-                  <p class="date">Sunday, August 9</p>
-                  <div class="events-container">
-                     
-                  </div>
                </div>
             </div>
          </div>
-         <div class="schedule-mobile">
-            <div id="day-selector">
-               <button id="day1-btn" class="day active">Day 1</button>
-               <button id="day2-btn" class="day">Day 2</button>
-               <div id="active-day-marker"></div>
-            </div>
-            <div id="day-panes">
-               <div id="day1-pane" class="calday active">
-                  <p class="date">Saturday, August 8</p>
-                  <div class="events-container">
-                     
-                  </div>
-               </div>
-               <div id="day2-pane" class="calday">
-                  <p class="date">Sunday, August 9</p>
-                  <div class="events-container">
-                     
-                  </div>
+         <div class="right-pane pane">
+            <h2>What's Going Down</h2>
+            <div class="calday">
+               <h3>Day 2</h3>
+               <p class="date">Sunday, August 9</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-      </section>
-      <section class="schedule-section">
-         <div class="schedule-desktop">
-            <div class="left-pane pane">
-               <div class="calday">
-                  <h3>Day 3</h3>
-                  <p class="date">Monday, August 10</p>
-                  <div class="events-container">
-                     
-                  </div>
+      </div>
+      <div class="schedule-mobile">
+         <div id="day-selector">
+            <button id="day1-btn" class="day active">Day 1</button>
+            <button id="day2-btn" class="day">Day 2</button>
+            <div id="active-day-marker"></div>
+         </div>
+         <div id="day-panes">
+            <div id="day1-pane" class="calday active">
+               <p class="date">Saturday, August 8</p>
+               <div class="events-container">
+
                </div>
             </div>
-            <div class="right-pane pane">
-               <div class="calday">
-                  <h3>Day 4</h3>
-                  <p class="date">Tuesday, August 11</p>
-                  <div class="events-container">
-                     
-                  </div>
+            <div id="day2-pane" class="calday">
+               <p class="date">Sunday, August 9</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-         <div class="schedule-mobile">
-            <div id="day-selector">
-               <button id="day3-btn" class="day active">Day 3</button>
-               <button id="day4-btn" class="day">Day 4</button>
-               <div id="active-day-marker3"></div>
-            </div>
-            <div id="day-panes">
-               <div id="day3-pane" class="calday active">
-                  <p class="date">Monday, August 10</p>
-                  <div class="events-container">
-                     
-                  </div>
-               </div>
-               <div id="day4-pane" class="calday">
-                  <p class="date">Tuesday, August 11</p>
-                  <div class="events-container">
-                     
-                  </div>
+      </div>
+   </section>
+   <section class="schedule-section">
+      <div class="schedule-desktop">
+         <div class="left-pane pane">
+            <div class="calday">
+               <h3>Day 3</h3>
+               <p class="date">Monday, August 10</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-      </section>
-      <section class="schedule-section">
-         <div class="schedule-desktop">
-            <div class="left-pane pane">
-               <div class="calday">
-                  <h3>Day 5</h3>
-                  <p class="date">Wednesday, August 12</p>
-                  <div class="events-container">
-                     
-                  </div>
-               </div>
-            </div>
-            <div class="right-pane pane">
-               <div class="calday">
-                  <h3>Day 6</h3>
-                  <p class="date">Thursday, August 13</p>
-                  <div class="events-container">
-                     
-                  </div>
+         <div class="right-pane pane">
+            <div class="calday">
+               <h3>Day 4</h3>
+               <p class="date">Tuesday, August 11</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-         <div class="schedule-mobile">
-            <div id="day-selector">
-               <button id="day5-btn" class="day active">Day 5</button>
-               <button id="day6-btn" class="day">Day 6</button>
-               <div id="active-day-marker5"></div>
-            </div>
-            <div id="day-panes">
-               <div id="day5-pane" class="calday active">
-                  <p class="date">Wednesday, August 12</p>
-                  <div class="events-container">
-                     
-                  </div>
+      </div>
+      <div class="schedule-mobile">
+         <div id="day-selector">
+            <button id="day3-btn" class="day active">Day 3</button>
+            <button id="day4-btn" class="day">Day 4</button>
+            <div id="active-day-marker3"></div>
+         </div>
+         <div id="day-panes">
+            <div id="day3-pane" class="calday active">
+               <p class="date">Monday, August 10</p>
+               <div class="events-container">
+
                </div>
-               <div id="day6-pane" class="calday">
-                  <p class="date">Thursday, August 13</p>
-                  <div class="events-container">
-                     
-                  </div>
+            </div>
+            <div id="day4-pane" class="calday">
+               <p class="date">Tuesday, August 11</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-      </section>
-      <section class="schedule-section">
-         <div class="schedule-desktop">
-            <div class="left-pane pane">
-               <div class="calday">
-                  <h3>Day 7</h3>
-                  <p class="date">Friday, August 14</p>
-                  <div class="events-container">
-                     
-                  </div>
-               </div>
-            </div>
-            <div class="right-pane pane">
-               <div class="calday">
-                  <h3>Day 8</h3>
-                  <p class="date">Saturday, August 15</p>
-                  <div class="events-container">
-                     
-                  </div>
+      </div>
+   </section>
+   <section class="schedule-section">
+      <div class="schedule-desktop">
+         <div class="left-pane pane">
+            <div class="calday">
+               <h3>Day 5</h3>
+               <p class="date">Wednesday, August 12</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-         <div class="schedule-mobile">
-            <div id="day-selector">
-               <button id="day7-btn" class="day active">Day 7</button>
-               <button id="day8-btn" class="day">Day 8</button>
-               <div id="active-day-marker7"></div>
-            </div>
-            <div id="day-panes">
-               <div id="day7-pane" class="calday active">
-                  <p class="date">Friday, August 14</p>
-                  <div class="events-container">
-                     
-                  </div>
-               </div>
-               <div id="day8-pane" class="calday">
-                  <p class="date">Saturday, August 15</p>
-                  <div class="events-container">
-                     
-                  </div>
+         <div class="right-pane pane">
+            <div class="calday">
+               <h3>Day 6</h3>
+               <p class="date">Thursday, August 13</p>
+               <div class="events-container">
+
                </div>
             </div>
          </div>
-      </section>
-      <section class="join-section">
-         <div class="join-header">
-            <div class="join-view-text">
-               <h2 id="registration">Join Us</h2>
-               <p>
-                  NeuralHacks is entirely student organized and run. This means support from industry mentors and volunteers is
-                  integral to the success of our event. Register to be a volunteer today!
-               </p>
+      </div>
+      <div class="schedule-mobile">
+         <div id="day-selector">
+            <button id="day5-btn" class="day active">Day 5</button>
+            <button id="day6-btn" class="day">Day 6</button>
+            <div id="active-day-marker5"></div>
+         </div>
+         <div id="day-panes">
+            <div id="day5-pane" class="calday active">
+               <p class="date">Wednesday, August 12</p>
+               <div class="events-container">
+
+               </div>
+            </div>
+            <div id="day6-pane" class="calday">
+               <p class="date">Thursday, August 13</p>
+               <div class="events-container">
+
+               </div>
             </div>
          </div>
-         <div class="card-group">
-            <div class="card">
-               <div class="card-header">
-                  <h3 style="font-size: 1.7rem; text-align: center;">Join as a Participant</h3>
+      </div>
+   </section>
+   <section class="schedule-section">
+      <div class="schedule-desktop">
+         <div class="left-pane pane">
+            <div class="calday">
+               <h3>Day 7</h3>
+               <p class="date">Friday, August 14</p>
+               <div class="events-container">
+
                </div>
-            
-               <a class="join-btn" href="https://outreachneuralhacks.typeform.com/to/Xxv0FhlX" target="_blank">Join as a Participant</a>
-            </div>
-            <div class="card">
-               <div class="card-header">
-                  <h3>Join as a Mentor</h3>
-               </div>
-            
-               <a class="join-btn" href="https://outreachneuralhacks.typeform.com/to/bIPgH8s9" target="_blank">Join as a Mentor</a>
-            </div>
-            <div class="card">
-               <div class="card-header">
-                  <h3 style="font-size: 1.5rem; text-align: center;">Join as a Campus Ambassador</h3>
-               </div>
-            
-               <a class="join-btn" href="https://outreachneuralhacks.typeform.com/to/nFmwduG7" target="_blank">Join as a Campus Ambassador</a>
             </div>
          </div>
-      </section>
-      <section class="sponsors-section">
-         <h2>Our Sponsors</h2>
-         
-            <div class="sponsors-container big">
-              <div class="sponsor">
-                <img src="assets/sponsor-logos/linode-logo_standard_light_medium1.png" />
-              </div>
-              <div class="sponsor">
-                  <img src="assets/sponsor-logos/bugseelogo.png" />
-              </div>
-            </div>
-            <div class="sponsors-container">
-               <div class="sponsor">
-                  <img src="assets/sponsor-logos/hcb.png" />
+         <div class="right-pane pane">
+            <div class="calday">
+               <h3>Day 8</h3>
+               <p class="date">Saturday, August 15</p>
+               <div class="events-container">
+
                </div>
             </div>
-            <!--
+         </div>
+      </div>
+      <div class="schedule-mobile">
+         <div id="day-selector">
+            <button id="day7-btn" class="day active">Day 7</button>
+            <button id="day8-btn" class="day">Day 8</button>
+            <div id="active-day-marker7"></div>
+         </div>
+         <div id="day-panes">
+            <div id="day7-pane" class="calday active">
+               <p class="date">Friday, August 14</p>
+               <div class="events-container">
+
+               </div>
+            </div>
+            <div id="day8-pane" class="calday">
+               <p class="date">Saturday, August 15</p>
+               <div class="events-container">
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="join-section">
+      <div class="join-header">
+         <div class="join-view-text">
+            <h2 id="registration">Join Us</h2>
+            <p>
+               NeuralHacks is entirely student organized and run. This means support from industry mentors and
+               volunteers is
+               integral to the success of our event. Register to be a volunteer today!
+            </p>
+         </div>
+      </div>
+      <div class="card-group">
+         <div class="card">
+            <div class="card-header">
+               <h3 style="font-size: 1.7rem; text-align: center;">Join as a Participant</h3>
+            </div>
+
+            <a class="join-btn" href="https://outreachneuralhacks.typeform.com/to/Xxv0FhlX"
+               target="_blank">Participant</a>
+         </div>
+         <div class="card">
+            <div class="card-header">
+               <h3>Join as a Mentor</h3>
+            </div>
+
+            <a class="join-btn" href="https://outreachneuralhacks.typeform.com/to/bIPgH8s9" target="_blank">Mentor</a>
+         </div>
+         <div class="card">
+            <div class="card-header">
+               <h3 style="font-size: 1.5rem; text-align: center;">Join as a Campus Ambassador</h3>
+            </div>
+
+            <a class="join-btn" href="https://outreachneuralhacks.typeform.com/to/nFmwduG7" target="_blank">Campus
+               Ambassador</a>
+         </div>
+      </div>
+   </section>
+   <section class="sponsors-section">
+      <h2>Our Sponsors</h2>
+
+      <div class="sponsors-container big">
+         <div class="sponsor">
+            <a href="https://www.linode.com/" target="_blank"><img
+                  src="assets/sponsor-logos/linode-logo_standard_light_medium1.png" /></a>
+         </div>
+         <div class="sponsor">
+            <a href="https://www.bugsee.com/" target="_blank"><img src="assets/sponsor-logos/bugseelogo.png" /></a>
+         </div>
+      </div>
+      <div class="sponsors-container">
+         <div class="sponsor">
+            <a href="https://hackclub.com/bank/" target="_blank"><img src="assets/sponsor-logos/hcb.png" /></a>
+         </div>
+      </div>
+      <!--
             <div class="sponsors-container">
               <div class="sponsor">
                 <a href="https://www.smartsheet.com/customers-home"><img src="assets/sponsor-logos/smartsheet.png" /></a>
@@ -1086,10 +1234,10 @@
                 <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="assets/sponsor-logos/stickermuleSVG.svg" /></a>
               </div>
             </div> -->
-      </section>
-      <section class="sponsors-section">
-         <h2>Our Speakers</h2>
-         <!--
+   </section>
+   <section class="sponsors-section">
+      <h2>Our Speakers</h2>
+      <!--
             <div class="sponsors-container big">
               <div class="sponsor">
                 <a href="https://privacy.microsoft.com/en-us/privacystatement"><img
@@ -1153,170 +1301,179 @@
               </div>
             </div>
             -->
-      </section>
+   </section>
 
-      <section class="sponsors-section">
-         
-         <div id="team" class="container">
-            <h2>Our Team</h2>
-            <div class="row justify-content-center py-5">
-               <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="static/img/team/krish2.jpg"/>
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           Krishannshu Gupta
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                           Executive Director
-                           </small>
-                        </div>
-                        <div class="text-center">
-                           <span class="link-span">
-                           <a class="team-social-link" href="https://www.linkedin.com/in/krishnanshu" target="_blank">
+   <section class="sponsors-section">
+
+      <div id="team" class="container">
+         <h2>Our Team</h2>
+         <div class="row justify-content-center py-5">
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/krish2.jpg" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Krishannshu Gupta
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Executive Director
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.linkedin.com/in/krishnanshu" target="_blank">
                            <i class="fab fa-linkedin fa-lg"></i>
-                           </a>
-                           <a class="team-social-link" href="https://github.com/josiahcoad" target="_blank">
+                        </a>
+                        <a class="team-social-link" href="https://github.com/josiahcoad" target="_blank">
                            <i class="fab fa-github-square fa-lg"></i>
-                           </a> -->
-                           </span>
-                        </div>
-                     </div>
+                        </a> -->
+                     </span>
+                  </div>
                </div>
-              
-                  <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="static/img/team/tarun2.jpg" />
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           Tarun Batchu
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                              Director of Operations
-                           </small>
-                        </div>
-                        <div class="text-center">
-                           <span class="link-span">
-                           <a class="team-social-link" href="https://www.linkedin.com/in/tarun-batchu-0a92911b1/" target="_blank">
+            </div>
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/tarun2.jpg" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Tarun Batchu
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Director of Finance
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.linkedin.com/in/tarun-batchu-0a92911b1/"
+                           target="_blank">
                            <i class="fab fa-linkedin fa-lg"></i>
-                           </a>
+                        </a>
                         <!--
                            <a class="team-social-link" href="https://github.com/allysonmking" target="_blank">
                            <i class="fab fa-github-square fa-lg"></i>
                            </a>-->
-                           </span>
-                        </div>
-                     </div>
+                     </span>
                   </div>
-                  
-                  <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="static/img/team/agustya2.jpg" />
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           Agustya Chamarthy
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                              Director of Marketing
-                           </small>
-                        </div>
-                        <div class="text-center">
-                           <span class="link-span">
-                              <a class="team-social-link" href="https://www.linkedin.com/in/agustya-chamarthy-42427b1b1/" target="_blank">
-                                 <i class="fab fa-linkedin fa-lg"></i>
-                              </a>
-                              <!--
+               </div>
+            </div>
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/agustya2.jpg" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Agustya Chamarthy
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Director of Operations
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.linkedin.com/in/agustya-chamarthy-42427b1b1/"
+                           target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <!--
                                              <a class="team-social-link" href="https://github.tamu.edu/finvedy" target="_blank">
                                              <i class="fab fa-github-square fa-lg"></i>
                                              </a> -->
-                           </span>
-                        </div>
-                     </div>
+                     </span>
                   </div>
+               </div>
+            </div>
 
-                  <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="static/img/team/chin.png" />
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           Chinmay Dandekar
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                              Director of Finance
-                           </small>
-                        </div>
-                        <div class="text-center">
-                           <span class="link-span">
-                              <a class="team-social-link" href="https://www.facebook.com/chinmay.dandekar.7370" target="_blank">
-                                 <i class="fab fa-facebook fa-lg"></i>
-                              </a>
-                           </span>
-                        </div>
-                     </div>
+
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/kush.jpg" />
+
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Kush Gogia
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Webmaster
+                     </small>
                   </div>
-
-                  <div class="card team-card">
-                     <img  class="card-img-top team-card-img" src="static/img/team/kush.jpg" />
-         
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           Kush Gogia
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                              Webmaster
-                           </small>
-                        </div>
-                        <div class="text-center">
-                           <span class="link-span">
-                           <a class="team-social-link" href="https://www.linkedin.com/in/kush-gogia-104464173/" target="_blank">
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.linkedin.com/in/kush-gogia-104464173/"
+                           target="_blank">
                            <i class="fab fa-linkedin fa-lg"></i>
-                           </a>
+                        </a>
                         <!--
                            <a class="team-social-link" href="https://www.facebook.com/profile.php?id=100017620691192" target="_blank">
                            <i class="fab fa-facebook fa-lg"></i>
                            </a>-->
-                           </span>
-                        </div>
-                     </div>
-                  </div>   
-                  
-                  <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="static/img/team/arul.jpg" />
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           Arul Saxena
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                           Social Media Manager
-                           </small>
-                        </div>
-                        <div class="text-center">
-                           <span class="link-span">
-                           <a class="team-social-link" href="https://www.linkedin.com/in/arul-saxena-1602401a9/" target="_blank">
+                     </span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/ritvik2.jpg" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Ritvik Banakar
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Operations
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.linkedin.com/in/ritvik-banakar-16a372199/"
+                           target="_blank">
                            <i class="fab fa-linkedin fa-lg"></i>
-                           </a>
-                           <!--<a class="team-social-link" href="https://github.com/geooot" target="_blank">
+                        </a>
+                     </span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/arul.jpg" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Arul Saxena
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Social Media Manager
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.linkedin.com/in/arul-saxena-1602401a9/"
+                           target="_blank">
+                           <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <!--<a class="team-social-link" href="https://github.com/geooot" target="_blank">
                            <i class="fab fa-github-square fa-lg"></i>
                            </a> -->
-                           </span>
-                        </div>
-                     </div>
+                     </span>
                   </div>
-                  <!--
-                  <div class="card team-card">
-                     <img class="card-img-top team-card-img" src="static/img/team/will.jpg" />
-                     <div class="card-body">
-                        <h5 class="card-title team-card-title text-center mb-2">
-                           William Zhao
-                        </h5>
-                        <div class="text-center mb-2">
-                           <small class="text-muted">
-                           Logistics
-                           </small>
-                        </div>
-                        <div class="text-center">
+               </div>
+            </div>
+
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/unknown.jpg" alt="Devin" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Devin
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Finance
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <!--
                            <span class="link-span">
                            <a class="team-social-link" href="https://www.linkedin.com/in/willz123/" target="_blank">
                            <i class="fab fa-linkedin fa-lg"></i>
@@ -1324,11 +1481,33 @@
                            <a class="team-social-link" href="https://github.com/VisionZ" target="_blank">
                            <i class="fab fa-github-square fa-lg"></i>
                            </a>
-                           </span>
-                        </div>
-                     </div>
+                           </span> -->
                   </div>
-               
+               </div>
+            </div>
+
+            <div class="card team-card">
+               <img class="card-img-top team-card-img" src="static/img/team/chin.png" />
+               <div class="card-body">
+                  <h5 class="card-title team-card-title text-center mb-2">
+                     Chinmay Dandekar
+                  </h5>
+                  <div class="text-center mb-2">
+                     <small class="text-muted">
+                        Finance
+                     </small>
+                  </div>
+                  <div class="text-center">
+                     <span class="link-span">
+                        <a class="team-social-link" href="https://www.facebook.com/chinmay.dandekar.7370"
+                           target="_blank">
+                           <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <!--
                   <div class="card team-card">
                      <img class="card-img-top team-card-img" src="static/img/team/dan.jpg" />
                      <div class="card-body">
@@ -1515,100 +1694,110 @@
                         </div>
                      </div>
                   </div> -->
-               
-            </div>
-         </div>
-      </div>
-      </section>
-      <footer>
-         <div class="end-group">
-            <section class="logo-group group">
-               <img class="footer-logo" src="static/img/logos/NeuralLogo-backg2.png" />
-               <p class="footer-flair-text" style="font-weight: 800; font-size: 20px; color:black">Made with &lt;3</p>
-               <div class="footer-socials">
-                  <a href="https://www.instagram.com/neural_hacks/" target="_blank">
-                  <img src="static/img/icons/instalogo.png" width="30"/>
-                  </a>
-                  <a href="https://www.linkedin.com/company/neuralhacks/" target="_blank">
-                     <img src="static/img/icons/linklogo.png" width="30"/>
-                  </a>
-                  <a href="https://www.facebook.com/neuralhacks/" target="_blank">
-                     <img src="static/img/icons/facelogo.png" width="30" />
-                  </a>
-                  <a href="mailto:neuralhacks@gmail.com" target="_blank">
-                     <img src="static/img/icons/email2logo.png" width="35"/>
-                  </a>
-                  <a href="https://twitter.com/neural_hacks" target="_blank">
-                     <img src="static/img/icons/twitter.png" width="35" />
-                  </a>
-               </div>
-            </section>
-            <section class="links-group group">
-               <h2 style="font-size: 40px;">Links</h2>
-               <ul>
-                  <li style="font-weight: 800; font-size: 20px; color:black"><a href="#" target="_blank">Applications</a></li> <!-- Add google form link when given-->
-                  <li style="font-weight: 800; font-size: 20px; color:black"><a href="conduct.html">Code of Conduct</a></li>
-                  <li style="font-weight: 800; font-size: 20px; color:black"><a href="faq.html">FAQ</a></li>
-               </ul>
-            </section>
-         </div>
 
-      </footer>
-      <div class="color-border-footer">
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
+         </div>
       </div>
-      <div id="typed-strings" style="display:none;">
-         <p>idea.</p>
-         <p>design.</p>
-         <p>experience.</p>
-         <p>story.</p>
-         <p>challenge.</p>
       </div>
-      <script>
-         var messages=["idea.", "design.", "experience.", "story.", "challenge."];
-         var rank=0;
-         
-         // Code for Chrome, Safari and Opera
-         document.getElementById("myTypewriter").addEventListener("webkitAnimationEnd", changeTxt);
-         
-         // Standard syntax
-         document.getElementById("myTypewriter").addEventListener("animationend", changeTxt);
-         
-         function changeTxt(e){
-           _h1 = this.getElementsByTagName("h1")[0];
-           _h1.style.webkitAnimation = 'none'; // set element animation to none
-            setTimeout(function() { // you surely want a delay before the next message appears
-               _h1.innerHTML=messages[rank];
-               var speed =3.5*messages[rank].length/20; // adjust the speed (3.5 is the original speed, 20 is the original string length
-               _h1.style.webkitAnimation = 'typing '+speed+'s steps(40, end), blink-caret .75s step-end infinite'; //  switch to the original set of animation      
-               (rank===messages.length-1)?rank=0:rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
-             }, 1000);
-         }
-      </script>
-      <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script type="text/javascript" src="scripts/character.js"></script>
-      <script type="text/javascript" src="scripts/mobileSchedule.js"></script>
-      <script type="text/javascript" src="scripts/nav.js"></script>
-      <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/jquery@3.4.0/dist/jquery.slim.min.js" integrity="sha384-7WBfQYubrFpye+dGHEeA3fHaTy/wpTFhxdjxqvK04e4orV3z+X4XC4qOX3qnkVC6" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async="async"></script>
-      <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
-      <script src="https://unpkg.com/tippy.js@6.2.3/dist/tippy-bundle.umd.min.js"></script>
-      <script src="static/js/index.js" type="text/javascript"></script>
-      <!-- Font Awesome 5 -->
-      <script src="https://kit.fontawesome.com/db6415d72b.js" async="async"></script>
-      <script>
-         var typed = new Typed('#typewriter', {
-             stringsElement: '#typed-strings',
-             typeSpeed: 60,
-             backSpeed: 40
-         });
-      </script>
-   </body>
+   </section>
+   <footer>
+      <div class="end-group">
+         <section class="logo-group group">
+            <img class="footer-logo" src="static/img/logos/NeuralLogo-backg2.png" />
+            <p class="footer-flair-text" style="font-weight: 800; font-size: 20px; color:black">Made with &lt;3</p>
+            <div class="footer-socials">
+               <a href="https://www.instagram.com/neural_hacks/" target="_blank">
+                  <img src="static/img/icons/instalogo.png" width="30" />
+               </a>
+               <a href="https://www.linkedin.com/company/neuralhacks/" target="_blank">
+                  <img src="static/img/icons/linklogo.png" width="30" />
+               </a>
+               <a href="https://www.facebook.com/neuralhacks/" target="_blank">
+                  <img src="static/img/icons/facelogo.png" width="30" />
+               </a>
+               <a href="mailto:neuralhacks@gmail.com" target="_blank">
+                  <img src="static/img/icons/email2logo.png" width="35" />
+               </a>
+               <a href="https://twitter.com/neural_hacks" target="_blank">
+                  <img src="static/img/icons/twitter.png" width="35" />
+               </a>
+            </div>
+         </section>
+         <section class="links-group group">
+            <h2 style="font-size: 40px;">Links</h2>
+            <ul>
+               <li style="font-weight: 800; font-size: 20px; color:black"><a
+                     href="https://outreachneuralhacks.typeform.com/to/bIPgH8s9" target="_blank">Applications</a></li>
+               <!-- Add google form link when given-->
+               <li style="font-weight: 800; font-size: 20px; color:black"><a href="conduct.html">Code of Conduct</a>
+               </li>
+               <li style="font-weight: 800; font-size: 20px; color:black"><a href="faq.html">FAQ</a></li>
+            </ul>
+         </section>
+      </div>
+
+   </footer>
+   <div class="color-border-footer">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+   </div>
+   <div id="typed-strings" style="display:none;">
+      <p>idea.</p>
+      <p>design.</p>
+      <p>experience.</p>
+      <p>story.</p>
+      <p>challenge.</p>
+   </div>
+   <script>
+      var messages = ["idea.", "design.", "experience.", "story.", "challenge."];
+      var rank = 0;
+
+      // Code for Chrome, Safari and Opera
+      document.getElementById("myTypewriter").addEventListener("webkitAnimationEnd", changeTxt);
+
+      // Standard syntax
+      document.getElementById("myTypewriter").addEventListener("animationend", changeTxt);
+
+      function changeTxt(e) {
+         _h1 = this.getElementsByTagName("h1")[0];
+         _h1.style.webkitAnimation = 'none'; // set element animation to none
+         setTimeout(function () { // you surely want a delay before the next message appears
+            _h1.innerHTML = messages[rank];
+            var speed = 3.5 * messages[rank].length / 20; // adjust the speed (3.5 is the original speed, 20 is the original string length
+            _h1.style.webkitAnimation = 'typing ' + speed + 's steps(40, end), blink-caret .75s step-end infinite'; //  switch to the original set of animation      
+            (rank === messages.length - 1) ? rank = 0 : rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
+         }, 1000);
+      }
+   </script>
+   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="scripts/character.js"></script>
+   <script type="text/javascript" src="scripts/mobileSchedule.js"></script>
+   <script type="text/javascript" src="scripts/nav.js"></script>
+   <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script src="https://unpkg.com/jquery@3.4.0/dist/jquery.slim.min.js"
+      integrity="sha384-7WBfQYubrFpye+dGHEeA3fHaTy/wpTFhxdjxqvK04e4orV3z+X4XC4qOX3qnkVC6"
+      crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
+      async="async"></script>
+   <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+   <script src="https://unpkg.com/tippy.js@6.2.3/dist/tippy-bundle.umd.min.js"></script>
+   <script src="static/js/index.js" type="text/javascript"></script>
+   <!-- Font Awesome 5 -->
+   <script src="https://kit.fontawesome.com/db6415d72b.js" async="async"></script>
+   <script>
+      var typed = new Typed('#typewriter', {
+         stringsElement: '#typed-strings',
+         typeSpeed: 60,
+         backSpeed: 40
+      });
+   </script>
+</body>
+
 </html>
