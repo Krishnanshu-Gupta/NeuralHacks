@@ -7650,8 +7650,8 @@ h1,h2,h3,h4,h5,h6{
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
 	padding-bottom: 50px;
 }
 
@@ -7668,6 +7668,15 @@ h1,h2,h3,h4,h5,h6{
 		width: auto;} }
 
 .speaker-name {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.speaker-desc {
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
