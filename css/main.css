@@ -7602,3 +7602,66 @@ h1,h2,h3,h4,h5,h6{
 		margin-left: 0%;
 	}
 }
+
+
+
+.speakers-section {
+	background-color: #ff90a0;
+	color: white;
+	margin: 0;
+	margin-top: 60px;
+	padding: 3vh 1.3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.speakers-section h2 {
+    width: 50%;
+    min-width: 30rem;
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+	margin-left: 50%;
+	transform: translateX(-50%); }
+	@media (max-width: 776px) {
+      .speakers-section h2 {
+        font-size: 2rem;
+		min-width: 20rem;
+		 margin-left: 55%;} }
+    @media (max-width: 576px) {
+      .speakers-section h2 {
+        font-size: 2rem;
+		min-width: 20rem;
+		 margin-left: 65%;} }
+
+.speaker {
+	display: flex;
+	width: fit-content;
+	height: fit-content;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+}
+
+.speaker-img {
+	align-self: center;
+	height: 300px;
+	width: auto;
+	margin-bottom: 30px;
+}
+
+.speaker-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
