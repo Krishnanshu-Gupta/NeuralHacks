@@ -1024,7 +1024,7 @@ body {
   background-color: #ff90a0;
   color: white;
   position: relative;
-  margin-top: 10vw;
+  margin-top: 3vw;
   padding: 5rem 5rem 2rem 5rem !important; }
   @media (min-width: 768px) {
     .join-section .join-header {
@@ -7701,16 +7701,56 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .workshop-section {
+	margin: 0;
+	padding: 3vh 1.3rem;
+	padding-top: 1rem;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
-a.workshop {
+.workshop {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 50px;
+	width: fit-content;
+	justify-content: center;
+}
+
+.workshop-img {
+	width: 427px;
+	height: 240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.workshop-link {
+	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 800;
 	color: darkorange;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	width: fit-content;
+	border-bottom: 3px solid deeppink;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.workshop-link:hover {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	color: darkorange;
+	font-size: 1.5rem;
 	margin-bottom: 20px;
 	width: fit-content;
 	border-bottom: 3px solid deeppink;
